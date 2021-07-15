@@ -13,7 +13,8 @@
     "backend": "json-server --watch db.json --port 5000"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "3.3.0",
+    "@openzeppelin/contracts": "^4.2.0",
+    "@pinata/sdk": "^1.1.23",
     "@truffle/hdwallet-provider": "1.1.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
@@ -21,17 +22,19 @@
     "babel-preset-stage-2": "6.24.1",
     "babel-preset-stage-3": "6.24.1",
     "babel-register": "6.26.0",
+    "base-path-converter": "^1.0.2",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
     "core-js": "^3.15.2",
     "dotenv": "8.2.0",
-    "json-server": "^0.16.3",
+    "simple-json-db": "^1.2.3",
     "truffle": "5.1.63",
     "truffle-hdwallet-provider-privkey": "0.3.0",
     "truffle-plugin-verify": "^0.5.11",
     "vue": "^3.0.0",
     "vue-router": "^4.0.10",
+    "vuesax": "^4.0.1-alpha.25",
     "web3": "1.2.6"
   },
   "devDependencies": {
