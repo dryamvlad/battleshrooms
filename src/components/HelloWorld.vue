@@ -8,14 +8,17 @@
           height="400"
         />
         <br>
-        <h1 class="text-xl-h4">Baby Battle Bots soming soon</h1>
+        <br>
+        <h2 class="text-md-h1 ">Baby Battle Bots</h2>
+        <br>
+        <h4 class="text-sm-h4">coming soon...</h4>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import logo from '../assets/bbb.jpg'
+import logo from '../assets/bbb.png'
 
 export default {
   name: 'HelloWorld',
@@ -25,3 +28,11 @@ export default {
   })
 }
 </script>
+
+<style scoped>
+.centered {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+</style>
