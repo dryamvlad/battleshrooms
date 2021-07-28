@@ -28,11 +28,11 @@ export default {
     },
   },
 
-  mounted() {
+  /* mounted() {
     this.$nextTick(function () {
-      //this.connectWeb3();
+      this.connectWeb3();
     });
-  },
+  }, */
 
   data() {
     return {

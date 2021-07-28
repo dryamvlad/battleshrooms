@@ -74,10 +74,10 @@
             </div>
             <div class="buttons">
               <div class="circle bg-primary-4">
-                <a href="https://twitter.com/BBBotsNFT" target="_blank" class="link-block-2 w-inline-block"><img src="images/twitter.svg" loading="lazy" width="48" height="48" alt="" class="image-4"></a>
+                <a href="https://twitter.com/BBBotsNFT" target="_blank" class="link-block-2 w-inline-block social-link-item"><img src="images/twitter.svg" loading="lazy" width="48" height="48" alt="" class="image-4"></a>
               </div>
               <div class="circle space-left">
-                <a href="https://discord.gg/stUqfHPt" target="_blank" class="link-block-3 w-inline-block"><img src="images/discord_logo.png" loading="lazy" width="48" height="48" alt="" class="image-5"></a>
+                <a href="https://discord.gg/stUqfHPt" target="_blank" class="link-block-3 w-inline-block social-link-item"><img src="images/discord_logo.png" loading="lazy" width="48" height="48" alt="" class="image-5"></a>
               </div>
             </div>
           </div><img src="images/for_site.png" width="600" sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 600px" srcset="images/for_site.png 500w, images/for_site.png 800w" alt="" class="image-2">
@@ -273,13 +273,13 @@
         <h3 class="display-heading-5">More to come</h3>
         <div class="text-lead space-bottom">This is just a start and we&#x27;re looking forward to grow big.<br>Join our community and rock with us!<span class="text-primary-3"></span></div>
         <div class="social-list">
-          <a href="https://twitter.com" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" width="60" alt=""></a>
-          <a href="https://slack.com" target="_blank" class="social-link-item w-inline-block"><img src="images/discord_logo.png" width="60" alt=""></a>
+          <a href="https://twitter.com/BBBotsNFT" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" width="60" alt=""></a>
+          <a href="https://discord.com/stUqfHPt" target="_blank" class="social-link-item w-inline-block"><img src="images/discord_logo.png" width="60" alt=""></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer wf-section">
+  <!-- <div class="footer wf-section">
     <div class="container">
       <div class="panel">
         <div class="panel-body">
@@ -287,14 +287,14 @@
             <div class="text-small">Baby Battle Bots community<a href="https://www.webflow.com/" target="_blank"></a>
             </div>
             <div class="social-list">
-              <a href="https://twitter.com" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" width="60" alt=""></a>
-              <a href="https://slack.com" target="_blank" class="social-link-item w-inline-block"><img src="images/discord_logo.png" width="60" alt=""></a>
+              <a href="https://twitter.com/BBBotsNFT" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" width="60" alt=""></a>
+              <a href="https://discord.com/stUqfHPt" target="_blank" class="social-link-item w-inline-block"><img src="images/discord_logo.png" width="60" alt=""></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
@@ -318,6 +318,9 @@ export default {
 </script>
 
 <style scoped>
+.social-link-item {
+  cursor: pointer;
+}
 .centered {
   position: fixed; /* or absolute */
   top: 50%;
