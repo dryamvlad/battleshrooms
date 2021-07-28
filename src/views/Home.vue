@@ -122,7 +122,7 @@
             <h3 class="display-heading-3">3 generations</h3>
             <div class="text-lead space-bottom">Each generation consists of 3200 pieces<span class="text-primary-3"></span></div>
           </div>
-          <div data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4" class="w-layout-grid grid-thirds space-bottom">
+          <div data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4" class="w-layout-grid grid-thirds space-bottom-large">
             <div class="panel bg-gray-1">
               <div class="panel-body justify-content-center">
                 <div class="center-content">
