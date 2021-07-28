@@ -1,17 +1,5 @@
 <template>
-  <v-app>
-    <!--     <v-app-bar app> </v-app-bar> -->
-
-    <v-main>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-main>
-
-    <v-footer app>
-      <!-- -->
-    </v-footer>
-  </v-app>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -42,7 +30,7 @@ export default {
 
   mounted() {
     this.$nextTick(function () {
-      this.connectWeb3();
+      //this.connectWeb3();
     });
   },
 
@@ -53,3 +41,4 @@ export default {
   },
 };
 </script>
+

@@ -1,5 +1,5 @@
 <template>
-  <h3>{{$store.state.wallet}}</h3>
+  <p class="text-subtitle1">{{$store.state.wallet}}</p>
 </template>
 
 <script>
