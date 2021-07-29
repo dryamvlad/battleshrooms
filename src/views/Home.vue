@@ -274,7 +274,7 @@
         <div class="text-lead space-bottom">This is just a start and we&#x27;re looking forward to grow big.<br>Join our community and rock with us!<span class="text-primary-3"></span></div>
         <div class="social-list">
           <a href="https://twitter.com/BBBotsNFT" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" width="60" alt=""></a>
-          <a href="https://discord.com/stUqfHPt" target="_blank" class="social-link-item w-inline-block"><img src="images/discord_logo.png" width="60" alt=""></a>
+          <a href="https://discord.gg/stUqfHPt"  target="_blank" class="social-link-item w-inline-block"><img src="images/discord_logo.png" width="60" alt=""></a>
         </div>
       </div>
     </div>
