@@ -28,6 +28,8 @@
     "chai-bignumber": "3.0.0",
     "core-js": "^3.15.2",
     "dotenv": "8.2.0",
+    "mosha-vue-toastify": "^1.0.17",
+    "playcanvas": "^1.45.3",
     "roboto-fontface": "*",
     "simple-json-db": "^1.2.3",
     "truffle": "5.1.63",
@@ -35,6 +37,7 @@
     "truffle-plugin-verify": "^0.5.11",
     "vue": "^3.0.0",
     "vue-router": "^4.0.10",
+    "vue-simple-spinner": "^1.2.10",
     "vuesax": "^4.0.1-alpha.25",
     "vuex": "^4.0.2",
     "web3": "1.2.6"
