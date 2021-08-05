@@ -11,8 +11,12 @@
         <div class="navbar-row">
           <div>
             <nav role="navigation" class="nav-menu w-nav-menu">
-              <a href="#roadmap" class="nav-link w-nav-link">Roadmap</a>
-              <a href="#" class="nav-link w-nav-link">Battle</a>
+              <div>
+                <a href="https://twitter.com/BBBotsNFT" target="_blank" class="link-block-2 social-link-item w-inline-block"><img src="images/twitter.svg" loading="lazy" width="48" height="48" alt="" class="image-4"></a>
+              </div>
+              <div>
+                <a href="https://discord.gg/rbquJjMzau" target="_blank" class="link-block-3 social-link-item w-inline-block"><img src="images/discord_logo.png" loading="lazy" width="48" height="48" alt="" class="image-5"></a>
+              </div>
             </nav>
           </div>
           <div class="navbar-controls">
@@ -33,16 +37,6 @@
                 <div class="stats-item-text">
                   {{ $store.state.contractData.owned }}
                 </div>
-              </div>
-              <div class="stats-item">
-                <img
-                  src="images/bbcoin.png"
-                  loading="lazy"
-                  width="24"
-                  height="24"
-                  alt=""
-                />
-                <div class="stats-item-text">0</div>
               </div>
             </div>
             <div class="navbar-buttons">

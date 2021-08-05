@@ -8,7 +8,7 @@
         <div class="text-lead space-bottom-extra-small">
           Minted {{ $store.state.contractData.totalSupply }} out of {{ $store.state.contractData.genSupply }} bots in 1st generation
         </div>
-        <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{ $store.getters.ethPrice }} eth</span></div>
+        <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
         <div class="panel space-bottom-extra-small" style="width: 340px;">
           <div class="form-block w-form">
             <form id="mint-form" name="email-form" data-name="Mint Form" class="center-content mint-form">

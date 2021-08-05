@@ -15,7 +15,7 @@
     "@mdi/font": "5.9.55",
     "@openzeppelin/contracts": "^4.2.0",
     "@pinata/sdk": "^1.1.23",
-    "@truffle/hdwallet-provider": "1.1.0",
+    "@truffle/hdwallet-provider": "^1.4.2",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-es2015": "6.24.1",

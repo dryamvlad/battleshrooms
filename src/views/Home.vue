@@ -9,56 +9,13 @@
   <NavBar />
   <div class="bbb-head wf-section">
     <div class="container space-bottom-large">
-      <div class="panel section bg-gradient-5 bot-hero">
+      <div class="panel section bg-gradient-4">
         <div class="panel-body align-content-center bot-hero">
-          <div class="content-width-extra-large">
-            <h1 class="display-heading-1">Baby Battle Bots</h1>
-            <div class="space-bottom-extra-small description">
-              <h3 class="card-heading display-inline">Cute and deadly</h3>
-              <h3 class="card-heading display-inline text-gray-4">
-                gamified collection of 10,000 procedurally generated 3d robots
-                that live and fight on Ethereum blockchain.
-              </h3>
-            </div>
-            <div class="buttons">
-              <div class="circle bg-primary-4">
-                <a
-                  href="https://twitter.com/BBBotsNFT"
-                  target="_blank"
-                  class="link-block-2 social-link-item w-inline-block"
-                  ><img
-                    src="images/twitter.svg"
-                    loading="lazy"
-                    width="48"
-                    height="48"
-                    alt=""
-                    class="image-4"
-                /></a>
-              </div>
-              <div class="circle space-left">
-                <a
-                  href="https://discord.gg/stUqfHPt"
-                  target="_blank"
-                  class="link-block-3 social-link-item w-inline-block"
-                  ><img
-                    src="images/discord_logo.png"
-                    loading="lazy"
-                    width="48"
-                    height="48"
-                    alt=""
-                    class="image-5"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <img
-            src="images/for_site.png"
-            width="600"
-            sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 600px"
-            srcset="images/for_site-p-500.png 500w, images/for_site.png 800w"
-            alt=""
-            class="image-2"
-          />
+          <div class="content-width-small bbb-logo"><img src="images/bbb_logo_new.png" loading="lazy" width="417" sizes="(max-width: 479px) 83vw, (max-width: 767px) 48vw, (max-width: 991px) 38vw, (max-width: 1919px) 34vw, 376px" srcset="images/bbb_logo_new.png 500w, images/bbb_logo_new.png 666w" alt=""></div>
+          <div class="content-width-medium center-content">
+            <h1 class="display-heading-5">Cute and deadly</h1>
+            <h3 class="card-heading display-inline text-gray-4">Create your own Bot army and battle other Bots to win Ether!</h3>
+          </div><img src="images/for_site.png" width="534" sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 534px" srcset="images/for_site-p-500.png 500w, images/for_site.png 800w" alt="" class="image-2">
         </div>
       </div>
     </div>
@@ -72,7 +29,7 @@
           <div class="center-content space-bottom-large">
             <h3 class="display-heading-3">3 generations</h3>
             <div class="text-lead space-bottom">
-              Each generation consists of 3200 pieces<span
+              Every generation has it's own character and traits. 3200 Bots per generation<span
                 class="text-primary-3"
               ></span>
             </div>
@@ -176,21 +133,18 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 1
               </h1>
-              <div class="card-heading text-gray-4">Early August</div>
+              <!-- <div class="card-heading text-gray-4">Early August</div> -->
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">25% sold</div>
-                <div>10 Bots will be airdropped to random holders</div>
+                <div>50 Bots giveway</div>
               </li>
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">50% sold</div>
                 <div>5% charity donation decided by community</div>
               </li>
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">100% sold</div>
                 <div>
-                  <span class="text-white">Bot Battles</span> development start
+                  <span class="text-white">Battle For Ether</span> Key airdrop for all holders
                 </div>
               </li>
             </ul>
@@ -202,23 +156,18 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 2
               </h1>
-              <div class="card-heading text-gray-4">Mid August</div>
+              <!-- <div class="card-heading text-gray-4">Mid August</div> -->
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">25% sold</div>
-                <div>20 Bots will be airdropped to random holders</div>
+                <div>50 Bots giveway</div>
               </li>
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">50% sold</div>
-                <div><span class="text-white">DAO </span>launch</div>
+                <div>5% charity donation decided by community</div>
               </li>
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">100% sold</div>
                 <div>
-                  20
-                  <span class="text-white">3d downloadable models</span>
-                  will be minted for Twitter giveaway
+                  <span class="text-white">Battle For Ether</span> Key airdrop for all holders
                 </div>
               </li>
             </ul>
@@ -230,63 +179,102 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 3
               </h1>
-              <div class="card-heading text-gray-4">Late August</div>
+              <!-- <div class="card-heading text-gray-4">Late August</div> -->
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">25% sold</div>
-                <div>30 Bots will be airdropped to random holders</div>
+                <div>50 Bots giveway</div>
               </li>
               <li class="bordered-list-item-small">
-                <div class="text-lead text-white">50% sold</div>
+                <div>Announcing 300
+                  <strong class="text-white">UniBots </strong>that will be raffled among random Battle For Ether winners</div>
+              </li>
+              <li class="bordered-list-item-small">
                 <div>
-                  Announcing 300
-                  <strong class="text-white">UniBots </strong>that will be given
-                  as prizes for Bot Battles winners
+                  <span class="text-white">Battle For Ether</span> Key airdrop for all holders
                 </div>
-              </li>
-              <li class="bordered-list-item-small">
-                <div class="text-lead text-white">100% sold</div>
-                <div>15% charity donation decided by community</div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div
-        data-w-id="42b171e2-d9f5-0917-f123-c4140485a072"
-        class="panel space-bottom"
-      >
-        <div id="roadmap" class="panel-body">
-          <div class="space-bottom">
-            <h1 class="space-bottom-extra-small text-primary-1">
-              Bot Battles +Shop
-            </h1>
-            <div class="card-heading text-gray-4">Early September</div>
+    </div>
+  </div>
+    <div class="space-bottom-large bfe wf-section">
+    <div class="container fadeup w-container">
+      <div class="panel space-bottom-large">
+        <div class="panel-body">
+          <div class="center-content">
+            <h3 class="display-heading-3">Battle For Ether</h3>
+            <div class="text-lead space-bottom">
+              Fun Ethereum-based browser game. No gas fees(we use Polygon L2)
+              <br>In order to play Battle For Ether you will need a Key
+              <br>‍<br>
+              <span class="text-white">
+                <strong>Launching after 1st generation 100% sold</strong>
+              </span>
+              <br>
+            </div>
           </div>
-          <div>
-            <span class="text-white"
-              ><strong>Basic Play to Earn browser game</strong></span
-            >
-            where you lead your bot army to fight other Bots and get
-            <span class="text-white">$BBT token</span> for each victory. You may
-            spend these tokens in Bot Battles Shop for purchasing shields and
-            other perks that will make your bot more likely to win!<br />Level
-            up for each 5th victory. After reaching level 10 your Bots will get
-            opportunity to win one of <span class="text-white">300 </span
-            ><span class="text-white">UniBots </span>for you!
+          <div class="panel bg-gradient-5 space-bottom">
+            <div class="panel-body justify-content-center panel-body-small">
+              <div class="row row-align-center">
+                <div class="circle-2 circle-horizontal">
+                  <h3 class="large-heading-2 no-bottom-space">1</h3>
+                </div>
+                <div>
+                  <h2 class="space-bottom-extra-small">Host a Battle</h2>
+                  <div class="text-lead">Every BBB Key holder will be able to host a battle by staking Ether. This stake will be transferred to contract and locked there</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel bg-gradient-5 space-bottom">
+            <div class="panel-body justify-content-center panel-body-small">
+              <div class="row row-align-center">
+                <div class="circle-2 circle-horizontal">
+                  <h3 class="large-heading-2 no-bottom-space">2</h3>
+                </div>
+                <div>
+                  <h2 class="space-bottom-extra-small">Share it</h2>
+                  <div class="text-lead">After staking you will get a link for sharing with other BBB Key holders. Every holder can take part in the Battle by making a stake equal to the initial stake made by battle host</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel bg-gradient-5 space-bottom">
+            <div class="panel-body justify-content-center panel-body-small">
+              <div class="row row-align-center">
+                <div class="circle-2 circle-horizontal">
+                  <h3 class="large-heading-2 no-bottom-space">3</h3>
+                </div>
+                <div>
+                  <h2 class="space-bottom-extra-small">Let the Battle start</h2>
+                  <div class="text-lead">After all seats are taken host will be able to start the Battle. Winner gets all Ether that was locked for current Battle. Every participant has equal rights for winning and picked randomly</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="circle space-bottom"><img src="https://uploads-ssl.webflow.com/6102e788f287b721ee235264/6102e788f287b7007f235307_icon-check-small.svg" alt="" class="icon"></div>
+            <div class="center-content">
+              <h5 class="text-gray-4 text-white">Starting out all BBB Key holders will have opportunity to host Battles with just 1 seat. Winning every <strong>5th</strong> battle will add to that number 1 more seat, but not more than 4.</h5>
+          </div>
           </div>
         </div>
       </div>
-      <div data-w-id="0b8e3388-cd3f-a983-3d4b-561b55fa818c" class="panel">
-        <div id="roadmap" class="panel-body">
-          <div class="space-bottom">
-            <h1 class="space-bottom-extra-small text-primary-1">
-              $BBT liquidity pool launch
-            </h1>
-            <div class="card-heading text-gray-4">Mid September</div>
+      <div data-w-id="1ec1defb-8287-b22b-e04e-f20d9fbfab2b" class="w-layout-grid grid-two-thirds space-bottom">
+        <div>
+          <div class="circle-large-2 bg-primary-3"><img src="https://uploads-ssl.webflow.com/6102e788f287b721ee235264/6102e788f287b71ad12352de_confetti.svg" alt=""></div>
+          <h1 class="display-heading-7">Battle<br>Grand Prize</h1>
+        </div>
+        <div class="panel bg-gradient-1">
+          <div class="panel-body">
+            <div>
+              <div class="text-lead space-bottom text-white">1% from each Battle total staked amount will be transferred to Battle Grand Prize fund. After reaching amount of 3 Eth the Prize will be raffled in next random battle and will be evenly distributed among participants.</div>
+              <div class="text-lead">Additionally 0.5% will be transferred to BBB Treasury and 0.5% to BBB Community fund.</div>
+            </div>
           </div>
-          <div>Trade your tokens received in fair bloody battles!</div>
         </div>
       </div>
     </div>
@@ -295,35 +283,19 @@
     <div class="container fadeup w-container">
       <div class="center-content">
         <h3 class="display-heading-3 space-bottom-large">Team</h3>
-        <div class="w-layout-grid grid-halves">
+        <div class="w-layout-grid grid-thirds">
           <div class="panel">
             <div class="panel-body justify-content-center">
               <div class="center-content">
                 <div class="space-bottom">
                   <img
-                    src="images/vlad.png"
+                    src="images/team_1.png"
                     alt=""
                     class="circle-extra-large space-bottom"
                   />
-                  <h4>Vlad</h4>
+                  <h4>Tokezo</h4>
                   <div class="text-lead">
-                    Initial&nbsp;idea,&nbsp;code,&nbsp;rendering
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="social-list">
-                    <a
-                      href="https://twitter.com/dryamvlad"
-                      target="_blank"
-                      class="social-link-item w-inline-block"
-                      ><img src="images/twitter.svg" alt=""
-                    /></a>
-                    <a
-                      href="https://instagram.com/dryamvlad"
-                      target="_blank"
-                      class="social-link-item w-inline-block"
-                      ><img src="images/instagram.svg" alt=""
-                    /></a>
+                    Initial idea / code
                   </div>
                 </div>
               </div>
@@ -334,28 +306,30 @@
               <div class="center-content">
                 <div class="space-bottom">
                   <img
-                    src="images/alex.png"
+                    src="images/team_2.png"
                     alt=""
                     class="circle-extra-large space-bottom"
                   />
-                  <h4>Alex</h4>
+                  <h4>Cyber Mystic</h4>
                   <div class="text-lead">
-                    Concept,&nbsp;modeling,&nbsp;texturing
+                    Concept / modeling / texturing
                   </div>
                 </div>
-                <div class="row">
-                  <div class="social-list">
-                    <a
-                      href="https://twitter.com/AlekseyProkoval"
-                      class="social-link-item w-inline-block"
-                      ><img src="images/twitter.svg" alt=""
-                    /></a>
-                    <a
-                      href="https://www.instagram.com/cyber_mystic_vr/"
-                      target="_blank"
-                      class="social-link-item w-inline-block"
-                      ><img src="images/instagram.svg" alt=""
-                    /></a>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-body justify-content-center">
+              <div class="center-content">
+                <div class="space-bottom">
+                  <img
+                    src="images/team_3.png"
+                    alt=""
+                    class="circle-extra-large space-bottom"
+                  />
+                  <h4>Eistan</h4>
+                  <div class="text-lead">
+                    Texturing / rendering
                   </div>
                 </div>
               </div>
@@ -380,7 +354,7 @@
             ><img src="images/twitter.svg" width="60" alt=""
           /></a>
           <a
-            href="https://discord.gg/stUqfHPt"
+            href="https://discord.gg/rbquJjMzau"
             target="_blank"
             class="social-link-item w-inline-block"
             ><img src="images/discord_logo.png" width="60" alt=""
@@ -395,7 +369,6 @@
 import NavBar from "../components/NavBar.vue";
 import MintForm from "../components/MintForm.vue";
 import ComingSoon from "../components/ComingSoon.vue";
-import * as pc from 'playcanvas';
 
 export default {
   name: "Home",

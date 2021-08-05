@@ -10,7 +10,8 @@ export default createStore({
         wallet: 0,
         bbbContract: null,
         contractData: {},
-        transactionPending: false
+        transactionPending: false,
+        price: 0.03
     },
     mutations: {
         setWallet(state, newWallet) {
