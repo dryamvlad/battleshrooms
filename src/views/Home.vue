@@ -7,15 +7,14 @@
     </div>
   </div>
   <NavBar />
-  <div class="bbb-head wf-section">
-    <div class="container space-bottom-large">
-      <div class="panel section bg-gradient-6">
-        <div class="panel-body align-content-center bot-hero"><img src="images/bbb_1gen_1.png" width="540" sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 540px" srcset="images/bbb_1gen_1-p-500.png 500w, images/bbb_1gen_1-p-800.png 800w, images/bbb_1gen_1-p-1080.png 1080w, images/bbb_1gen_1.png 1200w" alt="" class="image-2">
-          <div class="content-width-medium center-content header-text">
-            <h1 class="display-heading-7">Own a Bot<br>Battle other Bots<br>Earn Eth</h1>
-            <h1 class="text-gray-4 header-subtitle">In Battle for Ether</h1>
+  <div class="section space-bottom-large wf-section">
+    <div class="container">
+      <div class="w-layout-grid hero-2-grid-2"><img src="images/bbb_1gen_v01.png" width="541" sizes="(max-width: 479px) 95vw, (max-width: 767px) 90vw, 541px" srcset="images/bbb_1gen_v01.png 500w, images/bbb_1gen_v01.png 800w, images/bbb_1gen_v01.png 1080w, images/bbb_1gen_v01.png 1200w" alt="" class="rounded-image">
+        <div class="hero-content-2"><img src="images/bbb_logo_new.png" loading="lazy" width="286" sizes="(max-width: 479px) 92vw, 286px" srcset="images/bbb_logo_new-p-500.png 500w, images/bbb_logo_new.png 666w" alt="">
+          <div class="battle-title">
+            <h1 class="display-heading-7 battle-title-heading">Own a Bot<br>Battle other Bots<br>Earn Eth</h1>
+            <h5 class="panel-subheading text-primary-4">In Battle for Ether</h5>
           </div>
-          <div class="content-width-small bbb-logo"><img src="images/bbb_logo_new.png" loading="lazy" width="417" sizes="(max-width: 479px) 72vw, (max-width: 767px) 30vw, (max-width: 991px) 36vw, (max-width: 1919px) 33vw, 400px" srcset="images/bbb_logo_new-p-500.png 500w, images/bbb_logo_new.png 666w" alt="" class="image-6"></div>
         </div>
       </div>
     </div>
@@ -49,7 +48,7 @@
         </div>
       </div>
       <div class="center-content">
-        <div class="text-lead space-bottom">
+        <div>
           Example of Battle For Ether mechanics. Your results may be different<br/>
           Refer to description down the page for more details
         </div>
@@ -70,7 +69,7 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">1</h1>
-                  </div><img src="images/bbb_1gen_1.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/bbb_1gen_1-p-500.png 500w, images/bbb_1gen_1-p-800.png 800w, images/bbb_1gen_1-p-1080.png 1080w, images/bbb_1gen_1.png 1200w" alt="" class="generation-image first">
+                  </div><img src="images/bbb_1gen.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/bbb_1gen-p-500.png 500w, images/bbb_1gen-p-800.png 800w, images/bbb_1gen-p-1080.png 1080w, images/bbb_1gen.png 1200w" alt="" class="generation-image first">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -233,14 +232,14 @@
                 </div>
                 <div>
                   <h2 class="space-bottom-extra-small">Let the Battle start</h2>
-                  <div class="text-lead">After all slots are taken host will be able to start the Battle. Winner of the Battle gets all Ether that was locked for current Battle. Every participant has equal chances for winning and picked randomly</div>
+                  <div class="text-lead">After all slots are taken host will be able to start the Battle. Winner of the Battle gets all Ether that was locked for current Battle. Every participant has equal rights for winning and picked randomly</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="row center-content">
             <div class="circle space-bottom"><img src="https://uploads-ssl.webflow.com/6102e788f287b721ee235264/6102e788f287b7007f235307_icon-check-small.svg" alt="" class="icon"></div>
-            <h5 class="text-gray-4 text-white">Starting out all BBB Key holders will have opportunity to host Battles with just 1 slot. Winning every <strong>5th</strong> battle will add to that number 1 more slot, but not more than 4</h5>
+            <h5 class="text-gray-4 text-white">Starting out all BBB Key holders will have opportunity to host Battles with just 1 slot. Winning every <strong>5th</strong> battle will add to that number 1 more slot, but not more than 4.</h5>
           </div>
         </div>
       </div>
@@ -253,8 +252,8 @@
           <div class="panel bg-gradient-1">
             <div class="panel-body">
               <div>
-                <div class="text-lead space-bottom text-white">1% from each Battle total staked amount will be transferred to Battle Grand Prize fund. After reaching amount of 3 Eth the Prize will be raffled in next random battle and will be evenly distributed among participants</div>
-                <div class="text-lead">Additionally 0.5% will be transferred to BBB Treasury and 0.5% to BBB Community fund</div>
+                <div class="text-lead space-bottom text-white">1% from each Battle total staked amount will be transferred to Battle Grand Prize fund. After reaching amount of 3 Eth the Prize will be raffled in next random battle and will be evenly distributed among participants.</div>
+                <div class="text-lead">Additionally 0.5% will be transferred to BBB Treasury and 0.5% to BBB Community fund.</div>
               </div>
             </div>
           </div>
