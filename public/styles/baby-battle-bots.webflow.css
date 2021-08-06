@@ -4270,6 +4270,10 @@ figcaption {
   direction: ltr;
 }
 
+.logo {
+  margin-left: -18px;
+}
+
 @media screen and (min-width: 1920px) {
   .rounded-image {
     margin-right: 0px;
@@ -4577,6 +4581,10 @@ figcaption {
     margin-right: 0px;
     margin-left: 84px;
   }
+
+  .logo {
+    margin-left: -18px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -4600,7 +4608,7 @@ figcaption {
   }
 
   .rounded-image {
-    margin-left: 138px;
+    margin-left: 0px;
   }
 
   .rounded-image.section-title-image {
@@ -5072,6 +5080,10 @@ figcaption {
   .display-heading-5 {
     font-size: 54px;
     line-height: 54px;
+  }
+
+  .link-block-2.social-link-item {
+    display: inline-block;
   }
 
   .display-heading-6 {
@@ -6322,6 +6334,10 @@ figcaption {
   .battle-title {
     margin-left: 0px;
     text-align: center;
+  }
+
+  .logo {
+    margin-left: 0px;
   }
 }
 
