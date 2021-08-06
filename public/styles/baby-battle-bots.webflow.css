@@ -5660,7 +5660,7 @@ figcaption {
   }
 
   .rounded-image {
-    margin-left: 58px;
+    margin-left: 0px;
   }
 
   .rounded-image.section-title-image {
@@ -6289,6 +6289,10 @@ figcaption {
     white-space: nowrap;
   }
 
+  .display-heading-7.coming-soon {
+    white-space: normal;
+  }
+
   .display-heading-7.battle-title-heading {
     margin-top: 12px;
     font-size: 35px;
@@ -6329,5 +6333,32 @@ figcaption {
 #w-node-_00e1d4d2-637b-023d-3640-ae092c2fe6c3-55e109af {
   -ms-grid-column-align: end;
   justify-self: end;
+}
+
+@media screen and (min-width: 1920px) {
+  #w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: Area;
+  }
+
+  .grid-3>#w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+
+  @media screen and (min-width: 1920px) {
+    .hero-2-grid>#w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+
+    .hero-2-grid-2>#w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+  }
 }
 
