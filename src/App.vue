@@ -14,7 +14,7 @@ export default {
 
   mounted() {
     this.$nextTick(function () {
-      this.$store.dispatch("initWeb3", {vm: this});
+      //this.$store.dispatch("initWeb3", {vm: this});
     });
   },
 };

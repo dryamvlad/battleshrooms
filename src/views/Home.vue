@@ -12,7 +12,7 @@
       <div class="panel section bg-gradient-6">
         <div class="panel-body align-content-center bot-hero"><img src="images/bbb_1gen_1.png" width="540" sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 540px" srcset="images/bbb_1gen_1-p-500.png 500w, images/bbb_1gen_1-p-800.png 800w, images/bbb_1gen_1-p-1080.png 1080w, images/bbb_1gen_1.png 1200w" alt="" class="image-2">
           <div class="content-width-medium center-content header-text">
-            <h1 class="display-heading-7">Own your Bot<br>Battle other Bots<br>Earn Eth</h1>
+            <h1 class="display-heading-7">Own a Bot<br>Battle other Bots<br>Earn Eth</h1>
             <h1 class="text-gray-4 header-subtitle">In Battle for Ether</h1>
           </div>
           <div class="content-width-small bbb-logo"><img src="images/bbb_logo_new.png" loading="lazy" width="417" sizes="(max-width: 479px) 72vw, (max-width: 767px) 30vw, (max-width: 991px) 36vw, (max-width: 1919px) 33vw, 400px" srcset="images/bbb_logo_new-p-500.png 500w, images/bbb_logo_new.png 666w" alt="" class="image-6"></div>
@@ -373,7 +373,8 @@ export default {
   },
   computed: {
     isPaused() {
-      return this.$store.state.contractData.paused;
+      return true;
+      //return this.$store.state.contractData.paused;
     },
   },
 };
