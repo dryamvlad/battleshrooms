@@ -49,7 +49,7 @@
       </div>
       <div class="center-content">
         <div>
-          Example of Battle For Ether mechanics. Your results may be different<br/>
+          Example of Battle For Ether mechanics. You may stake any amount of Eth<br/>
           Refer to description down the page for more details
         </div>
       </div>
