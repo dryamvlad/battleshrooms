@@ -2,10 +2,10 @@
   <div class="space-bottom-large wf-section">
     <div class="container fadeup w-container">
       <div class="center-content">
-        <h3 class="display-heading-5">
-          1st generation<br />coming soon
+        <h3 class="display-heading-7 coming-soon space-bottom-extra-small">
+          1st generation coming soon
         </h3>
-        <div class="text-lead space-bottom">
+        <div class="text-lead space-bottom-extra-small">
           Join our
           <a href="https://discord.gg/rbquJjMzau" target="_blank">Discord</a> and
           <a href="https://twitter.com/BBBotsNFT" target="_blank">Twitter </a

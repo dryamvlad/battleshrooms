@@ -9,13 +9,13 @@
   <NavBar />
   <div class="bbb-head wf-section">
     <div class="container space-bottom-large">
-      <div class="panel section bg-gradient-4">
-        <div class="panel-body align-content-center bot-hero">
-          <div class="content-width-small bbb-logo"><img src="images/bbb_logo_new.png" loading="lazy" width="417" sizes="(max-width: 479px) 83vw, (max-width: 767px) 48vw, (max-width: 991px) 38vw, (max-width: 1919px) 34vw, 376px" srcset="images/bbb_logo_new.png 500w, images/bbb_logo_new.png 666w" alt=""></div>
-          <div class="content-width-medium center-content">
-            <h1 class="display-heading-5">Cute and deadly</h1>
-            <h3 class="card-heading display-inline text-gray-4">Create your own Bot army and battle other Bots to win Ether!</h3>
-          </div><img src="images/for_site.png" width="534" sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 534px" srcset="images/for_site-p-500.png 500w, images/for_site.png 800w" alt="" class="image-2">
+      <div class="panel section bg-gradient-6">
+        <div class="panel-body align-content-center bot-hero"><img src="images/bbb_1gen_1.png" width="540" sizes="(max-width: 479px) 400px, (max-width: 767px) 49vw, (max-width: 1919px) 51vw, 540px" srcset="images/bbb_1gen_1-p-500.png 500w, images/bbb_1gen_1-p-800.png 800w, images/bbb_1gen_1-p-1080.png 1080w, images/bbb_1gen_1.png 1200w" alt="" class="image-2">
+          <div class="content-width-medium center-content header-text">
+            <h1 class="display-heading-7">Own your Bot<br>Battle other Bots<br>Earn Eth</h1>
+            <h1 class="text-gray-4 header-subtitle">In Battle for Ether</h1>
+          </div>
+          <div class="content-width-small bbb-logo"><img src="images/bbb_logo_new.png" loading="lazy" width="417" sizes="(max-width: 479px) 72vw, (max-width: 767px) 30vw, (max-width: 991px) 36vw, (max-width: 1919px) 33vw, 400px" srcset="images/bbb_logo_new-p-500.png 500w, images/bbb_logo_new.png 666w" alt="" class="image-6"></div>
         </div>
       </div>
     </div>
@@ -24,38 +24,53 @@
   <MintForm v-else />
   <div class="space-bottom-large wf-section">
     <div class="container fadeup w-container">
+      
+      <div class="w-layout-grid grid-thirds space-bottom">
+        <div class="panel center-content">
+          <div class="panel-body">
+            <h2 class="space-bottom-extra-small">Stake</h2>
+            <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">$200</h1>
+            <h4 class="space-bottom-extra-small text-gray-4">in Eth</h4>
+          </div>
+        </div>
+        <div class="panel center-content">
+          <div class="panel-body">
+            <h2 class="space-bottom-extra-small">Invite up to</h2>
+            <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">4</h1>
+            <h4 class="space-bottom-extra-small text-gray-4">players</h4>
+          </div>
+        </div>
+        <div class="panel center-content">
+          <div class="panel-body">
+            <h2 class="space-bottom-extra-small">Earn</h2>
+            <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">$800</h1>
+            <h4 class="space-bottom-extra-small text-gray-4">in Eth</h4>
+          </div>
+        </div>
+      </div>
+      <div class="center-content">
+        <div class="text-lead space-bottom">
+          Example of Battle For Ether mechanics. Your results may be different<br/>
+          Refer to description down the page for more details
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space-bottom-large wf-section">
+    <div class="container fadeup w-container">
       <div class="panel">
         <div class="panel-body">
           <div class="center-content space-bottom-large">
             <h3 class="display-heading-3">3 generations</h3>
-            <div class="text-lead space-bottom">
-              Every generation has it's own character and traits. 3200 Bots per generation<span
-                class="text-primary-3"
-              ></span>
-            </div>
+            <div class="text-lead space-bottom">Each generation consists of 3200 pieces<span class="text-primary-3"></span></div>
           </div>
-          <div
-            data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4"
-            class="w-layout-grid grid-thirds space-bottom"
-          >
+          <div data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4" class="w-layout-grid grid-thirds space-bottom">
             <div class="panel bg-gray-1">
               <div class="panel-body justify-content-center">
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">1</h1>
-                  </div>
-                  <img
-                    src="images/for_site_2.png"
-                    loading="lazy"
-                    width="643"
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 29vw, 441px"
-                    srcset="
-                      images/for_site_2-p-500.png 500w,
-                      images/for_site_2.png       800w
-                    "
-                    alt=""
-                    class="generation-image first"
-                  />
+                  </div><img src="images/bbb_1gen_1.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/bbb_1gen_1-p-500.png 500w, images/bbb_1gen_1-p-800.png 800w, images/bbb_1gen_1-p-1080.png 1080w, images/bbb_1gen_1.png 1200w" alt="" class="generation-image first">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -69,19 +84,7 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">2</h1>
-                  </div>
-                  <img
-                    src="images/question.png"
-                    loading="lazy"
-                    width="643"
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 29vw, 441px"
-                    srcset="
-                      images/question-p-500.png 500w,
-                      images/question.png       600w
-                    "
-                    alt=""
-                    class="generation-image"
-                  />
+                  </div><img src="images/question.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/question-p-500.png 500w, images/question.png 600w" alt="" class="generation-image">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -95,19 +98,7 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">3</h1>
-                  </div>
-                  <img
-                    src="images/question.png"
-                    loading="lazy"
-                    width="643"
-                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 29vw, 441px"
-                    srcset="
-                      images/question-p-500.png 500w,
-                      images/question.png       600w
-                    "
-                    alt=""
-                    class="generation-image"
-                  />
+                  </div><img src="images/question.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/question-p-500.png 500w, images/question.png 600w" alt="" class="generation-image">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -200,21 +191,13 @@
       </div>
     </div>
   </div>
-    <div class="space-bottom-large bfe wf-section">
+  <div class="space-bottom-large bfe wf-section">
     <div class="container fadeup w-container">
       <div class="panel space-bottom-large">
         <div class="panel-body">
           <div class="center-content">
             <h3 class="display-heading-3">Battle For Ether</h3>
-            <div class="text-lead space-bottom">
-              Fun Ethereum-based browser game. No gas fees(we use Polygon L2)
-              <br>In order to play Battle For Ether you will need a Key
-              <br>‍<br>
-              <span class="text-white">
-                <strong>Launching after 1st generation 100% sold</strong>
-              </span>
-              <br>
-            </div>
+            <div class="text-lead space-bottom">Ethereum-based browser game. No gas fees — we use Polygon L2<br>In order to play Battle For Ether you will need a Key<br>‍<br><span class="text-white"><strong>Launching after 1st generation 100% sold</strong></span><br></div>
           </div>
           <div class="panel bg-gradient-5 space-bottom">
             <div class="panel-body justify-content-center panel-body-small">
@@ -237,12 +220,12 @@
                 </div>
                 <div>
                   <h2 class="space-bottom-extra-small">Share it</h2>
-                  <div class="text-lead">After staking you will get a link for sharing with other BBB Key holders. Every holder can take part in the Battle by making a stake equal to the initial stake made by battle host</div>
+                  <div class="text-lead">After staking you will get a link for sharing with other BBB Key holders. Every holder can take part in the Battle by making a stake equal to the initial stake made by Battle host</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="panel bg-gradient-5 space-bottom">
+          <div class="panel bg-gradient-5 space-bottom-large">
             <div class="panel-body justify-content-center panel-body-small">
               <div class="row row-align-center">
                 <div class="circle-2 circle-horizontal">
@@ -250,29 +233,29 @@
                 </div>
                 <div>
                   <h2 class="space-bottom-extra-small">Let the Battle start</h2>
-                  <div class="text-lead">After all seats are taken host will be able to start the Battle. Winner gets all Ether that was locked for current Battle. Every participant has equal rights for winning and picked randomly</div>
+                  <div class="text-lead">After all slots are taken host will be able to start the Battle. Winner of the Battle gets all Ether that was locked for current Battle. Every participant has equal chances for winning and picked randomly</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row center-content">
             <div class="circle space-bottom"><img src="https://uploads-ssl.webflow.com/6102e788f287b721ee235264/6102e788f287b7007f235307_icon-check-small.svg" alt="" class="icon"></div>
-            <div class="center-content">
-              <h5 class="text-gray-4 text-white">Starting out all BBB Key holders will have opportunity to host Battles with just 1 seat. Winning every <strong>5th</strong> battle will add to that number 1 more seat, but not more than 4.</h5>
-          </div>
+            <h5 class="text-gray-4 text-white">Starting out all BBB Key holders will have opportunity to host Battles with just 1 slot. Winning every <strong>5th</strong> battle will add to that number 1 more slot, but not more than 4</h5>
           </div>
         </div>
       </div>
-      <div data-w-id="1ec1defb-8287-b22b-e04e-f20d9fbfab2b" class="w-layout-grid grid-two-thirds space-bottom">
-        <div>
-          <div class="circle-large-2 bg-primary-3"><img src="https://uploads-ssl.webflow.com/6102e788f287b721ee235264/6102e788f287b71ad12352de_confetti.svg" alt=""></div>
-          <h1 class="display-heading-7">Battle<br>Grand Prize</h1>
-        </div>
-        <div class="panel bg-gradient-1">
-          <div class="panel-body">
-            <div>
-              <div class="text-lead space-bottom text-white">1% from each Battle total staked amount will be transferred to Battle Grand Prize fund. After reaching amount of 3 Eth the Prize will be raffled in next random battle and will be evenly distributed among participants.</div>
-              <div class="text-lead">Additionally 0.5% will be transferred to BBB Treasury and 0.5% to BBB Community fund.</div>
+      <div class="space-bottom-extra-small">
+        <div data-w-id="1ec1defb-8287-b22b-e04e-f20d9fbfab2b" class="w-layout-grid grid-two-thirds">
+          <div class="row grand-prize">
+            <div class="circle-large-2 bg-primary-1"><img src="https://uploads-ssl.webflow.com/6102e788f287b721ee235264/6102e788f287b71ad12352de_confetti.svg" alt=""></div>
+            <h1 class="display-heading-7 grand-prize">Battle<br>Grand Prize</h1>
+          </div>
+          <div class="panel bg-gradient-1">
+            <div class="panel-body">
+              <div>
+                <div class="text-lead space-bottom text-white">1% from each Battle total staked amount will be transferred to Battle Grand Prize fund. After reaching amount of 3 Eth the Prize will be raffled in next random battle and will be evenly distributed among participants</div>
+                <div class="text-lead">Additionally 0.5% will be transferred to BBB Treasury and 0.5% to BBB Community fund</div>
+              </div>
             </div>
           </div>
         </div>

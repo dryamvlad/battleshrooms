@@ -2,7 +2,7 @@
   <div class="space-bottom-large mint-section wf-section">
     <div class="container fadeup w-container">
       <div class="center-content">
-        <h3 class="display-heading-3 space-bottom">
+        <h3 class="display-heading-7 space-bottom">
           Mint your Bots
         </h3>
         <div class="text-lead space-bottom-extra-small">
