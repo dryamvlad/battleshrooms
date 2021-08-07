@@ -2447,6 +2447,7 @@ figcaption {
   top: 0px;
   z-index: 99;
   display: block;
+  background-color: #13131d;
 }
 
 .nav-menu {
@@ -4085,6 +4086,7 @@ figcaption {
 
 .body {
   padding-bottom: 10px;
+  background-color: #13131d;
 }
 
 .circle-2 {
@@ -4280,8 +4282,8 @@ figcaption {
 }
 
 .video-container {
-  width: 600px;
-  height: 600px;
+  width: 541px;
+  height: 541px;
 }
 
 .background-video {
@@ -4616,6 +4618,11 @@ figcaption {
   .logo {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .video-container {
+    width: 600px;
+    height: 600px;
   }
 }
 
@@ -6392,7 +6399,7 @@ figcaption {
 
   .video-container {
     width: 100%;
-    height: 300px;
+    height: 400px;
   }
 
   .background-video {
