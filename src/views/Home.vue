@@ -28,34 +28,47 @@
   <MintForm v-else />
   <div class="space-bottom-large wf-section">
     <div class="container fadeup w-container">
-      
-      <div class="w-layout-grid grid-thirds space-bottom">
-        <div class="panel center-content">
-          <div class="panel-body">
-            <h2 class="space-bottom-extra-small">Stake</h2>
-            <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">$200</h1>
-            <h4 class="space-bottom-extra-small text-gray-4">in Eth</h4>
-          </div>
-        </div>
-        <div class="panel center-content">
-          <div class="panel-body">
-            <h2 class="space-bottom-extra-small">Invite</h2>
-            <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">4</h1>
-            <h4 class="space-bottom-extra-small text-gray-4">players</h4>
-          </div>
-        </div>
-        <div class="panel center-content">
-          <div class="panel-body">
-            <h2 class="space-bottom-extra-small">Earn</h2>
-            <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">$800</h1>
-            <h4 class="space-bottom-extra-small text-gray-4">in Eth</h4>
-          </div>
+      <div class="center-content space-bottom-large">
+        <h3 class="display-heading-3">How it works</h3>
+        <div class="hiw-text">
+          <div class="text-lead">Stake Eth</div>
+          <div class="circle-small space-left-extra-small"><img src="images/icon-arrow-right.svg" alt=""></div>
+          <div class="text-lead space-left-extra-small">Battle other players</div>
+          <div class="circle-small space-left-extra-small"><img src="images/icon-arrow-right.svg" alt=""></div>
+          <div class="text-lead space-left-extra-small">Earn Eth</div>
         </div>
       </div>
       <div class="center-content">
-        <div>
-          Example of Battle For Ether mechanics. You may stake any amount of Eth<br/>
-          Refer to description down the page for more details
+        <h2>Example</h2>
+      </div>
+      <div class="panel">
+        <div class="panel-body">
+          <div class="w-layout-grid grid-thirds space-bottom">
+            <div class="panel center-content">
+              <div class="panel-body">
+                <h2 class="space-bottom-extra-small">Stake</h2>
+                <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">$200</h1>
+                <h4 class="space-bottom-extra-small text-gray-4">in Eth</h4>
+              </div>
+            </div>
+            <div class="panel center-content">
+              <div class="panel-body">
+                <h2 class="space-bottom-extra-small">Battle</h2>
+                <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">4</h1>
+                <h4 class="space-bottom-extra-small text-gray-4">players</h4>
+              </div>
+            </div>
+            <div class="panel center-content">
+              <div class="panel-body">
+                <h2 class="space-bottom-extra-small">Earn</h2>
+                <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">$800</h1>
+                <h4 class="space-bottom-extra-small text-gray-4">in Eth</h4>
+              </div>
+            </div>
+          </div>
+          <div class="center-content">
+            <div class="text-lead">Refer to <a href="#BFE">Battle For Ether</a> description down the page for more details<span class="text-primary-3"></span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -123,7 +136,7 @@
       </div>
       <div class="w-layout-grid grid-thirds space-bottom">
         <div class="panel">
-          <div id="roadmap" class="panel-body">
+          <div class="panel-body">
             <div class="space-bottom-large">
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 1
@@ -137,16 +150,11 @@
               <li class="bordered-list-item-small">
                 <div>5% charity donation decided by community</div>
               </li>
-              <li class="bordered-list-item-small">
-                <div>
-                  <span class="text-white">Battle For Ether</span> Key airdrop for all holders
-                </div>
-              </li>
             </ul>
           </div>
         </div>
         <div class="panel">
-          <div id="roadmap" class="panel-body">
+          <div class="panel-body">
             <div class="space-bottom-large">
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 2
@@ -160,16 +168,11 @@
               <li class="bordered-list-item-small">
                 <div>5% charity donation decided by community</div>
               </li>
-              <li class="bordered-list-item-small">
-                <div>
-                  <span class="text-white">Battle For Ether</span> Key airdrop for all holders
-                </div>
-              </li>
             </ul>
           </div>
         </div>
         <div class="panel">
-          <div id="roadmap" class="panel-body">
+          <div class="panel-body">
             <div class="space-bottom-large">
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 3
@@ -184,11 +187,6 @@
                 <div>Announcing 300
                   <strong class="text-white">UniBots </strong>that will be raffled among random Battle For Ether winners</div>
               </li>
-              <li class="bordered-list-item-small">
-                <div>
-                  <span class="text-white">Battle For Ether</span> Key airdrop for all holders
-                </div>
-              </li>
             </ul>
           </div>
         </div>
@@ -200,8 +198,8 @@
       <div class="panel space-bottom-large">
         <div class="panel-body">
           <div class="center-content">
-            <h3 class="display-heading-3">Battle For Ether</h3>
-            <div class="text-lead space-bottom">Ethereum-based browser game. No gas fees — we use Polygon L2<br>In order to play Battle For Ether you will need a Key<br>‍<br><span class="text-white"><strong>Launching after 1st generation 100% sold</strong></span><br></div>
+            <h3 id="BFE" class="display-heading-3">Battle For Ether</h3>
+            <div class="text-lead space-bottom"><span class="text-white"><strong>Launching after 1st generation 100% sold</strong></span> <br>‍<br>Ethereum-based browser game. No gas fees — we use Polygon L2<br>In order to play Battle For Ether you will need a Key<br>You will be able to claim your Key after 1st generation sold out<br>‍<br></div>
           </div>
           <div class="panel bg-gradient-5 space-bottom">
             <div class="panel-body justify-content-center panel-body-small">
@@ -210,8 +208,8 @@
                   <h3 class="large-heading-2 no-bottom-space">1</h3>
                 </div>
                 <div>
-                  <h2 class="space-bottom-extra-small">Host a Battle</h2>
-                  <div class="text-lead">Every BBB Key holder will be able to host a battle by staking Ether. This stake will be transferred to contract and locked there</div>
+                  <h2 class="space-bottom-extra-small">Host Battle</h2>
+                  <div class="text-lead">Every BBB Key holder will be able to host a battle by staking Ether. This stake will be transferred to contract and locked there. You can instantly unstake if no one has joined your hosted Battle yet</div>
                 </div>
               </div>
             </div>
@@ -223,8 +221,8 @@
                   <h3 class="large-heading-2 no-bottom-space">2</h3>
                 </div>
                 <div>
-                  <h2 class="space-bottom-extra-small">Share it</h2>
-                  <div class="text-lead">After staking you will get a link for sharing with other BBB Key holders. Every holder can take part in the Battle by making a stake equal to the initial stake made by Battle host</div>
+                  <h2 class="space-bottom-extra-small">Invite other Players</h2>
+                  <div class="text-lead">After staking you will get a link for sharing with other BBB Key holders. Also your battle will be displayed on Battle For Ether main page. Every holder can take part in the Battle by making a stake equal to the initial stake made by Battle host</div>
                 </div>
               </div>
             </div>
@@ -236,8 +234,8 @@
                   <h3 class="large-heading-2 no-bottom-space">3</h3>
                 </div>
                 <div>
-                  <h2 class="space-bottom-extra-small">Let the Battle start</h2>
-                  <div class="text-lead">After all slots are taken host will be able to start the Battle. Winner of the Battle gets all Ether that was locked for current Battle. Every participant has equal rights for winning and picked randomly</div>
+                  <h2 class="space-bottom-extra-small">Start Battle</h2>
+                  <div class="text-lead">Battle starts automatically after all slots are taken. Winner of the Battle gets all Ether that was staked for current Battle. Every participant has equal rights for winning</div>
                 </div>
               </div>
             </div>
