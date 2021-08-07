@@ -28,6 +28,7 @@
     "chai-bignumber": "3.0.0",
     "core-js": "^3.15.2",
     "dotenv": "8.2.0",
+    "ethereumjs-abi": "^0.6.8",
     "mosha-vue-toastify": "^1.0.17",
     "playcanvas": "^1.45.3",
     "roboto-fontface": "*",

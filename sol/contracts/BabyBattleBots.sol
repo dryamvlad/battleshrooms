@@ -14,6 +14,7 @@ contract BabyBattleBots is ERC721Enumerable, Ownable {
     bool public _paused = true;
 
     address t1 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
+    address t2 = 0xb7d9580AA336FedA04F17c1B9bf49c2967dDB9F7;
 
     constructor() ERC721("Baby Battle Bots", "BBB") {
         _safeMint(t1, 0);
@@ -90,6 +91,10 @@ contract BabyBattleBots is ERC721Enumerable, Ownable {
 
     function withdraw() public payable onlyOwner {
         uint256 _balance = address(this).balance;
-        require(payable(t1).send(_balance));
+        uint256 w1 = _balance * 37 / 1000;
+        uint256 w2 = _balance - w1;
+
+        require(payable(t1).send(w1));
+        require(payable(t2).send(w2));
     }
 }
