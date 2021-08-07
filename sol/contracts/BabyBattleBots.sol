@@ -13,8 +13,8 @@ contract BabyBattleBots is ERC721Enumerable, Ownable {
     uint256 private _genSupply = 3200;
     bool public _paused = true;
 
-    address t1 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
-    address t2 = 0xb7d9580AA336FedA04F17c1B9bf49c2967dDB9F7;
+    address t1 = 0xb7d9580AA336FedA04F17c1B9bf49c2967dDB9F7;
+    address t2 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
 
     constructor() ERC721("Baby Battle Bots", "BBB") {
         _safeMint(t1, 0);
