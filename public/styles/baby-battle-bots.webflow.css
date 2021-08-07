@@ -127,7 +127,7 @@
 
 body {
   padding-bottom: 96px;
-  background-color: #12141d;
+  background-color: #13131d;
   font-family: Inter, sans-serif;
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 16px;
@@ -2438,7 +2438,7 @@ figcaption {
 .navbar-wrapper {
   position: relative;
   z-index: 5;
-  background-color: #12141d;
+  background-color: #13131d;
 }
 
 .navbar-wrapper.sticky-top {
@@ -4280,13 +4280,13 @@ figcaption {
 }
 
 .video-container {
-  width: 541px;
-  height: 541px;
+  width: 600px;
+  height: 600px;
 }
 
 .background-video {
-  width: 541px;
-  height: 541px;
+  width: 600px;
+  height: 600px;
 }
 
 .hiw-text {
