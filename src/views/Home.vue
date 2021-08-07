@@ -19,7 +19,6 @@
         <div class="hero-content-2 center-content"><img src="images/logo_v02.logo.png" loading="lazy" width="286" sizes="(max-width: 479px) 92vw, 286px" srcset="images/logo_v02.logo-p-500.png 500w, images/logo_v02.logo-p-800.png 800w, images/logo_v02.logo.png 1000w" alt="" class="logo">
           <div class="battle-title">
             <h1 class="display-heading-7 battle-title-heading">Own a Bot<br>Battle other Bots<br>Earn Eth</h1>
-            <h5 class="panel-subheading text-primary-4">In Battle for Ether</h5>
           </div>
         </div>
       </div>
