@@ -4204,6 +4204,10 @@ figcaption {
   margin-bottom: 0px;
 }
 
+.display-heading-7.battle-title-heading {
+  text-align: center;
+}
+
 .bordered-list-item-2 {
   margin-bottom: 24px;
   padding-bottom: 24px;
@@ -4271,7 +4275,18 @@ figcaption {
 }
 
 .logo {
-  margin-left: -18px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.video-container {
+  width: 541px;
+  height: 541px;
+}
+
+.background-video {
+  width: 541px;
+  height: 541px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -4583,7 +4598,8 @@ figcaption {
   }
 
   .logo {
-    margin-left: -18px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -6331,6 +6347,24 @@ figcaption {
     flex-direction: column;
   }
 
+  .hero-content-2.center-content {
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .battle-title {
     margin-left: 0px;
     text-align: center;
@@ -6338,6 +6372,16 @@ figcaption {
 
   .logo {
     margin-left: 0px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .background-video {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -6349,32 +6393,5 @@ figcaption {
 #w-node-_00e1d4d2-637b-023d-3640-ae092c2fe6c3-55e109af {
   -ms-grid-column-align: end;
   justify-self: end;
-}
-
-@media screen and (min-width: 1920px) {
-  #w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: Area;
-  }
-
-  .grid-3>#w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-  }
-
-  @media screen and (min-width: 1920px) {
-    .hero-2-grid>#w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
-      -ms-grid-row: 1;
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 3;
-    }
-
-    .hero-2-grid-2>#w-node-ad0e9238-feec-c31b-bdae-2ed4f2fd715b-29432f09 {
-      -ms-grid-row: 1;
-      -ms-grid-column: 1;
-      -ms-grid-column-span: 1;
-    }
-  }
 }
 

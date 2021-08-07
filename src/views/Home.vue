@@ -9,8 +9,14 @@
   <NavBar />
   <div class="section space-bottom-large wf-section">
     <div class="container">
-      <div class="w-layout-grid hero-2-grid-2"><img src="images/bbb_1gen_v01.png" width="541" sizes="(max-width: 479px) 95vw, (max-width: 767px) 90vw, 541px" srcset="images/bbb_1gen_v01.png 500w, images/bbb_1gen_v01.png 800w, images/bbb_1gen_v01.png 1080w, images/bbb_1gen_v01.png 1200w" alt="" class="rounded-image">
-        <div class="hero-content-2"><img src="images/logo_v02.logo.png" class="logo" loading="lazy" width="286" sizes="(max-width: 479px) 92vw, 286px" srcset="images/logo_v02.logo.png 500w, images/logo_v02.logo.png 800w, images/logo_v02.logo.png 1000w" alt="">
+      <div class="w-layout-grid hero-2-grid-2">
+        <div class="video-container">
+          <div data-poster-url="videos/BBB_animation-poster-00001.jpg" data-video-urls="videos/BBB_animation-transcode.mp4,videos/BBB_animation-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/BBB_animation-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="videos/BBB_animation-transcode.mp4" data-wf-ignore="true">
+              <source src="videos/BBB_animation-transcode.webm" data-wf-ignore="true">
+            </video></div>
+        </div>
+        <div class="hero-content-2 center-content"><img src="images/logo_v02.logo.png" loading="lazy" width="286" sizes="(max-width: 479px) 92vw, 286px" srcset="images/logo_v02.logo-p-500.png 500w, images/logo_v02.logo-p-800.png 800w, images/logo_v02.logo.png 1000w" alt="" class="logo">
           <div class="battle-title">
             <h1 class="display-heading-7 battle-title-heading">Own a Bot<br>Battle other Bots<br>Earn Eth</h1>
             <h5 class="panel-subheading text-primary-4">In Battle for Ether</h5>
