@@ -39,7 +39,7 @@
         </div>
         <div class="panel center-content">
           <div class="panel-body">
-            <h2 class="space-bottom-extra-small">Invite up to</h2>
+            <h2 class="space-bottom-extra-small">Invite</h2>
             <h1 class="display-heading-2 text-primary-3 space-bottom-extra-small">4</h1>
             <h4 class="space-bottom-extra-small text-gray-4">players</h4>
           </div>
