@@ -26,11 +26,11 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
-          `https://main.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
+          `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
         )
       },
-      gas: 5000000,
-      gasPrice: 5000000000, // 5 gwei
+      gas: 30000000,
+      gasPrice: 34316549536, // 5 gwei
       network_id: 1
     },
     rinkeby: {
@@ -40,8 +40,8 @@ module.exports = {
           `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
         )
       },
-      gas: 5000000,
-      gasPrice: 5000000000, // 5 gwei
+      gas: 31000000,
+      gasPrice: 52000000000, // 5 gwei
       network_id: 4
     },
     ropsten: {
@@ -51,8 +51,8 @@ module.exports = {
           `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
         )
       },
-      gas: 5000000,
-      gasPrice: 5000000000, // 5 gwei
+      gas: 300000,
+      gasPrice: 52000000000, // 5 gwei
       network_id: 3
     }
   },

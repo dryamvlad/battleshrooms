@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 import Web3 from "web3";
-import BabyBattleBots from '../../sol/abis/BabyBattleBots.json'
+import { ABI } from '../contracts_config.js'
 import { createToast } from 'mosha-vue-toastify';
 
 export default createStore({
@@ -40,7 +40,7 @@ export default createStore({
             const netId = await web3.eth.net.getId();
             var wallet = accounts[0];
 
-            if (netId !== 4) {
+            if (netId !== 1) {
                 createToast("Wrong network", {
                     position: 'top-center',
                     type: 'danger',
@@ -56,7 +56,7 @@ export default createStore({
                 return;
             }
 
-            var bbbContract = new web3.eth.Contract(BabyBattleBots.abi, BabyBattleBots.networks[netId].address);
+            var bbbContract = new web3.eth.Contract(ABI, "0xbeA022640D6Ce7FF51ec9039f6DD9cdE89EA83e4");
             var web3Connected = true;
 
             commit('setWeb3', web3)
@@ -71,49 +71,61 @@ export default createStore({
                 totalSupply: await this.state.bbbContract.methods.totalSupply().call(),
                 owned: await this.state.bbbContract.methods.balanceOf(this.state.wallet).call(),
                 price: await this.state.bbbContract.methods.getPrice().call(),
-                paused: await this.state.bbbContract.methods.isPaused().call(),
-                genSupply: await this.state.bbbContract.methods.getGenSupply().call(),
+                paused: await this.state.bbbContract.methods._paused().call()
             };
             this.commit('setContractData', contractData)
         },
         async mintBot({ commit }, number) {
             if (this.state.bbbContract) {
                 const price = Number(this.state.contractData.price) * number;
-                const gasAmount = await this.state.bbbContract.methods.mintBot(number).estimateGas({ from: this.state.wallet, value: price });
                 const store = this;
+                this.state.bbbContract.methods.mintBot(number).estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
+                    store.commit('setTransactionPending', true)
 
-                this.commit('setTransactionPending', true)
-                
-                this.state.bbbContract.methods
-                    .mintBot(number)
-                    .send({ from: this.state.wallet, value: price, gas: String(gasAmount) })
-                    .on('transactionHash', function (hash) {
-                        console.log("transactionHash: ", hash)
-                    })
-                    .on('receipt', function (receipt) {
-                        if(receipt.status) {
-                            createToast("You got it! Congrats!", {
-                                position: 'top-center',
-                                type: 'success',
-                                transition: 'slide',
-                                timeout: 20000,
-                                showIcon: 'true',
-                                hideProgressBar: 'true'
-                            })
-                        } else {
-                            createToast("Transaction failed :(", {
-                                position: 'top-center',
-                                type: 'danger',
-                                transition: 'slide',
-                                timeout: 20000,
-                                showIcon: 'true',
-                                hideProgressBar: 'true'
-                            })
-                        }
+                    store.state.bbbContract.methods
+                        .mintBot(number)
+                        .send({ from: store.state.wallet, value: price, gas: String(gasAmount) })
+                        .on('transactionHash', function (hash) {
+                            console.log("transactionHash: ", hash)
+                        })
+                        .on('receipt', function (receipt) {
+                            if (receipt.status) {
+                                createToast("You got it! Congrats!", {
+                                    position: 'top-center',
+                                    type: 'success',
+                                    transition: 'slide',
+                                    timeout: 20000,
+                                    showIcon: 'true',
+                                    hideProgressBar: 'true'
+                                })
+                            } else {
+                                createToast("Transaction failed :(", {
+                                    position: 'top-center',
+                                    type: 'danger',
+                                    transition: 'slide',
+                                    timeout: 20000,
+                                    showIcon: 'true',
+                                    hideProgressBar: 'true'
+                                })
+                            }
 
-                        store.dispatch('getContractData');
-                        store.commit('setTransactionPending', false)
+                            store.dispatch('getContractData');
+                            store.commit('setTransactionPending', false)
+                        })
+                        .on('error', function (error) {
+                            store.commit('setTransactionPending', false)
+                        })
+                }).catch(function(error) {
+                    createToast("Looks like you don't have enough funds, sorry :(", {
+                        position: 'top-center',
+                        type: 'danger',
+                        transition: 'slide',
+                        timeout: 20000,
+                        showIcon: 'true',
+                        hideProgressBar: 'true'
                     })
+                    store.commit('setTransactionPending', false)
+                })
             }
         }
     },
