@@ -339,7 +339,7 @@
             ><img src="images/twitter.svg" width="60" alt=""
           /></a>
           <a
-            href="https://discord.gg/rbquJjMzau"
+            href="https://discord.gg/ffNCWsc566"
             target="_blank"
             class="social-link-item w-inline-block"
             ><img src="images/discord_logo.png" width="60" alt=""

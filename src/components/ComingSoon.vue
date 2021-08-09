@@ -9,7 +9,7 @@
             </h3>
             <div class="text-lead space-bottom-extra-small">
               Join our
-              <a href="https://discord.gg/rbquJjMzau" target="_blank">Discord</a> and
+              <a href="https://discord.gg/ffNCWsc566" target="_blank">Discord</a> and
               <a href="https://twitter.com/BBBotsNFT" target="_blank">Twitter </a
               >for announcements and giveaways<span class="text-primary-3"></span>
             </div>
