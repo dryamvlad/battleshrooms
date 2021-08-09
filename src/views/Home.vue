@@ -79,7 +79,7 @@
         <div class="panel-body">
           <div class="center-content space-bottom-large">
             <h3 class="display-heading-3">3 generations</h3>
-            <div class="text-lead space-bottom">Each generation consists of 3200 pieces. Announcing <span class="text-primary-3"></span></div>
+            <div class="text-lead space-bottom">Each generation consists of 3500 pieces. Announcing <span class="text-primary-3"></span></div>
           </div>
           <div data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4" class="w-layout-grid grid-thirds space-bottom">
             <div class="panel bg-gray-1">
@@ -91,7 +91,7 @@
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
-                    <div>3200</div>
+                    <div>3500</div>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
-                    <div>3200</div>
+                    <div>3500</div>
                   </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
-                    <div>3200</div>
+                    <div>3500</div>
                   </div>
                 </div>
               </div>
