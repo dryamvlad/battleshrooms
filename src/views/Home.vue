@@ -375,7 +375,11 @@ export default {
   },
   computed: {
     isPaused() {
-      return this.$store.state.contractData.paused;
+      if(typeof this.$store.state.contractData.paused !== "undefined") {
+        return this.$store.state.contractData.paused;
+      } else {
+        return true;
+      }
     },
   },
 };
