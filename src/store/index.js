@@ -3,6 +3,8 @@ import Web3 from "web3";
 import { ABI } from '../contracts_config.js'
 import { createToast } from 'mosha-vue-toastify';
 
+import BabyBattleBotsGenOne from '../../sol/abis/BabyBattleBotsGenOne.json'
+
 export default createStore({
     state: {
         web3: null,
@@ -11,7 +13,7 @@ export default createStore({
         bbbContract: null,
         contractData: {},
         transactionPending: false,
-        price: 0.035
+        price: 0.035,
     },
     mutations: {
         setWallet(state, newWallet) {
@@ -31,7 +33,7 @@ export default createStore({
         },
         setTransactionPending(state, newTransactionPending) {
             state.transactionPending = newTransactionPending;
-        }
+        },
     },
     actions: {
         async initWeb3({ commit }, vm) {
@@ -40,7 +42,7 @@ export default createStore({
             const netId = await web3.eth.net.getId();
             var wallet = accounts[0];
 
-            if (netId !== 1) {
+            if (netId !== 4) {
                 createToast("Wrong network", {
                     position: 'top-center',
                     type: 'danger',
@@ -56,7 +58,9 @@ export default createStore({
                 return;
             }
 
-            var bbbContract = new web3.eth.Contract(ABI, "0xbeA022640D6Ce7FF51ec9039f6DD9cdE89EA83e4");
+            //DEBUG
+            //var bbbContract = new web3.eth.Contract(ABI, "0xbeA022640D6Ce7FF51ec9039f6DD9cdE89EA83e4");
+            var bbbContract = new web3.eth.Contract(BabyBattleBotsGenOne.abi, BabyBattleBotsGenOne.networks[netId].address);
             var web3Connected = true;
 
             commit('setWeb3', web3)
@@ -71,7 +75,9 @@ export default createStore({
                 totalSupply: await this.state.bbbContract.methods.totalSupply().call(),
                 owned: await this.state.bbbContract.methods.balanceOf(this.state.wallet).call(),
                 price: await this.state.bbbContract.methods.getPrice().call(),
-                paused: await this.state.bbbContract.methods._paused().call()
+                paused: await this.state.bbbContract.methods._paused().call(),
+                esPaused: await this.state.bbbContract.methods._ESpaused().call(),
+                esEligible: await this.state.bbbContract.methods._earlySupporters(this.state.wallet).call(),
             };
             this.commit('setContractData', contractData)
         },
@@ -115,7 +121,7 @@ export default createStore({
                         .on('error', function (error) {
                             store.commit('setTransactionPending', false)
                         })
-                }).catch(function(error) {
+                }).catch(function (error) {
                     createToast("Looks like you don't have enough funds, sorry :(", {
                         position: 'top-center',
                         type: 'danger',
@@ -127,7 +133,80 @@ export default createStore({
                     store.commit('setTransactionPending', false)
                 })
             }
-        }
+        },
+        async mintEarlyBot({ commit }) {
+            if (this.state.bbbContract) {
+                const price = Number(this.state.contractData.price);
+                const store = this;
+                this.state.bbbContract.methods.mintESBot().estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
+                    store.commit('setTransactionPending', true)
+
+                    store.state.bbbContract.methods
+                        .mintESBot()
+                        .send({ from: store.state.wallet, value: price, gas: String(gasAmount) })
+                        .on('transactionHash', function (hash) {
+                            console.log("transactionHash: ", hash)
+                        })
+                        .on('receipt', function (receipt) {
+                            if (receipt.status) {
+                                createToast("You got it! Congrats!", {
+                                    position: 'top-center',
+                                    type: 'success',
+                                    transition: 'slide',
+                                    timeout: 20000,
+                                    showIcon: 'true',
+                                    hideProgressBar: 'true'
+                                })
+                            } else {
+                                createToast("Transaction failed :(", {
+                                    position: 'top-center',
+                                    type: 'danger',
+                                    transition: 'slide',
+                                    timeout: 20000,
+                                    showIcon: 'true',
+                                    hideProgressBar: 'true'
+                                })
+                            }
+
+                            store.dispatch('getContractData');
+                            store.commit('setTransactionPending', false)
+                        })
+                        .on('error', function (error) {
+                            store.commit('setTransactionPending', false)
+                        })
+                }).catch(function (e, error) {
+                    createToast("Error running transaction", {
+                        position: 'top-center',
+                        type: 'danger',
+                        transition: 'slide',
+                        timeout: 20000,
+                        showIcon: 'true',
+                        hideProgressBar: 'true'
+                    })
+                    store.commit('setTransactionPending', false)
+                })
+            }
+        },
+        async addEarlySupporters({ commit }, earlySupporters) {
+            const store = this;
+
+            this.state.bbbContract.methods.addESMany(earlySupporters).estimateGas({ from: this.state.wallet }).then(function (gasAmount) {
+                store.state.bbbContract.methods
+                    .addESMany(earlySupporters)
+                    .send({ from: store.state.wallet, gas: String(gasAmount) })
+                    .on('transactionHash', function (hash) {
+                        console.log("transactionHash: ", hash)
+                    })
+                    .on('receipt', function (receipt) {
+                        console.log(receipt)
+                    })
+                    .on('error', function (error) {
+                        console.log(error)
+                    })
+            }).catch(function (error) {
+                console.log(error)
+            })
+        },
     },
     getters: {
         ethPrice(state) {
