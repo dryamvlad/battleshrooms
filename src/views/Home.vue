@@ -24,8 +24,7 @@
       </div>
     </div>
   </div>
-  <ComingSoon v-if="isPaused" />
-  <MintForm v-else />
+  <ComingSoon/>
   <div class="space-bottom-large wf-section">
     <div class="container fadeup w-container">
       <div class="center-content space-bottom-large">
