@@ -1170,7 +1170,7 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         uint256 supply = totalSupply();
         require( !_paused,                              "Sale paused" );
         require( num < 21,                              "You can mint a maximum of 20 Bots" );
-        require( supply + num < MAX_SUPPLY - _giftReserved - _esReserved,      "Exceeds maximum Bots supply" );
+        require( supply + num <= MAX_SUPPLY - _giftReserved - _esReserved,      "Exceeds maximum Bots supply" );
         require( msg.value >= _price * num,             "Ether sent is not correct" );
 
         for(uint256 i; i < num; i++){
@@ -1183,7 +1183,7 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         uint256 balance = balanceOf(msg.sender);
 
         require( !_ESpaused,                              "Early Supporters sale paused" );
-        require( supply + 1 < _giftReserved,      "Exceeds maximum Bots reserved supply" );
+        require( supply + 1 <= _esReserved,      "Exceeds maximum Bots reserved supply" );
         require( balance == 0,      "You already have some Bots" );
         require( _earlySupporters[msg.sender],      "Sorry you are not on the Early Supporters list" );
         require( msg.value >= _price,             "Ether sent is not correct" );
