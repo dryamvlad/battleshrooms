@@ -27,7 +27,7 @@
   <div class="space-bottom-large trailer wf-section">
     <div class="container fadeup w-container">
       <div class="video-wrapper">
-        <div style="padding-top:56.17021276595745%" class="w-embed-youtubevideo"><iframe src="https://www.youtube.com/embed/0FTpNK9Y2Uo?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
+        <div style="padding-top:56.17021276595745%" class="w-embed-youtubevideo"><iframe src="https://www.youtube.com/embed/I8tit8Js2-M?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@
         <div class="panel-body">
           <div class="center-content space-bottom-large">
             <h3 class="display-heading-3">3 generations</h3>
-            <div class="text-lead space-bottom">Each generation consists of 3500 pieces<span class="text-primary-3"></span></div>
+            <div class="text-lead space-bottom">Each generation consists of 3500 Bots<span class="text-primary-3"></span></div>
           </div>
           <div data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4" class="w-layout-grid grid-thirds space-bottom">
             <div class="panel bg-gray-1">
@@ -94,7 +94,7 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">1</h1>
-                  </div><img src="images/bbb_generator_v06.0001.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/bbb_generator_v06.0001.png 500w, images/bbb_generator_v06.0001.png 600w" alt="" class="generation-image first">
+                  </div><img src="images/bbb_generator_v06.0001.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/bbb_generator_v06.0001-p-500.png 500w, images/bbb_generator_v06.0001.png 600w" alt="" class="generation-image first">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -108,7 +108,7 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">2</h1>
-                  </div><img src="images/site_question.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/site_question.png 500w, images/site_question.png 800w, images/site_question.png 1200w" alt="" class="generation-image">
+                  </div><img src="images/mistery_bot.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/mistery_bot.png 500w, images/mistery_bot.png 800w, images/mistery_bot.png 1200w" alt="" class="generation-image">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -122,7 +122,7 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">3</h1>
-                  </div><img src="images/site_question.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/site_question.png 500w, images/site_question.png 800w, images/site_question.png 1200w" alt="" class="generation-image">
+                  </div><img src="images/mistery_bot.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/mistery_bot.png 500w, images/mistery_bot.png 800w, images/mistery_bot.png 1200w" alt="" class="generation-image">
                 </div>
                 <div class="bot-count">
                   <div class="badge bg-gradient-1">
@@ -259,7 +259,7 @@
   </div>
   <div class="space-bottom-large team wf-section">
     <div class="container fadeup w-container">
-      <div class="center-content space-left-extra-small">
+      <div class="center-content space-bottom">
         <h3 class="display-heading-3">Traits and levels</h3>
       </div>
       <div data-w-id="484af546-e259-15ab-9cca-ce8b8abda988" class="w-layout-grid grid-two-thirds bot-chars space-bottom-large">
@@ -347,7 +347,7 @@
                   />
                   <h4>Eistan</h4>
                   <div class="text-lead">
-                    Animation / rendering
+                    Lookdev / Animation
                   </div>
                 </div>
                 <div class="row">
