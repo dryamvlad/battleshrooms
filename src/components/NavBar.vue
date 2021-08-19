@@ -19,7 +19,7 @@
               </div>
             </nav>
           </div>
-          <div class="navbar-controls">
+          <!-- <div class="navbar-controls">
             <div class="user-stats" v-show="$store.state.web3Connected">
               <div class="stats-item">
                 <img
