@@ -5,7 +5,7 @@
         <div class="panel-body">
             <div class="center-content">
             <h3 class="display-heading-7 coming-soon space-bottom-extra-small">
-              1st generation coming soon
+              1st generation coming August 25
             </h3>
             <div class="text-lead space-bottom-extra-small">
               Join our

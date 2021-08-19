@@ -24,6 +24,13 @@
       </div>
     </div>
   </div>
+  <div class="space-bottom-large trailer wf-section">
+    <div class="container fadeup w-container">
+      <div class="video-wrapper">
+        <div style="padding-top:56.17021276595745%" class="w-embed-youtubevideo"><iframe src="https://www.youtube.com/embed/0FTpNK9Y2Uo?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0" frameborder="0" style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+  </div>
   <ComingSoon v-if="isPaused" />
   <MintForm v-else />
   <div class="space-bottom-large wf-section">
@@ -32,10 +39,10 @@
         <h3 class="display-heading-3">How it works</h3>
         <div class="hiw-text">
           <div class="text-lead">Stake Eth</div>
-          <div class="circle-small space-left-extra-small"><img src="images/icon-arrow-right.svg" alt=""></div>
-          <div class="text-lead space-left-extra-small">Battle other players</div>
-          <div class="circle-small space-left-extra-small"><img src="images/icon-arrow-right.svg" alt=""></div>
-          <div class="text-lead space-left-extra-small">Earn Eth</div>
+          <div class="circle-small space-left-small"><img src="images/icon-arrow-right.svg" alt=""></div>
+          <div class="text-lead space-left-small">Battle other players</div>
+          <div class="circle-small space-left-small"><img src="images/icon-arrow-right.svg" alt=""></div>
+          <div class="text-lead space-left-small">Earn Eth</div>
         </div>
       </div>
       <div class="center-content">
@@ -141,7 +148,7 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 1
               </h1>
-              <!-- <div class="card-heading text-gray-4">Early August</div> -->
+              <div  class="text-white">August 25</div>
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
@@ -159,7 +166,7 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 2
               </h1>
-              <!-- <div class="card-heading text-gray-4">Mid August</div> -->
+              <div  class="text-white">Late September</div>
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
@@ -177,7 +184,7 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 3
               </h1>
-              <!-- <div class="card-heading text-gray-4">Late August</div> -->
+              <div  class="text-white">Late October</div>
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
@@ -243,8 +250,7 @@
           <div class="center-content"><img src="images/cup_v01.CUP-1.png" width="178" alt="">
             <h1>Battle Progressive Prize</h1>
             <div>
-              <div class="text-lead">1% from each Battle total staked amount will be transferred to Battle Grand Prize fund. After reaching amount of 3 Eth the Prize will be raffled in next random battle and will be evenly distributed among participants.</div>
-              <div class="text-lead">Additionally 1% will be transferred to Community fund.</div>
+              <div class="text-lead">0.5% of each battle will go to Progressive Prize<br>0.5% will go to community wallet<br>Every battle will have a chance of winning the Progressive Prize, the prize grows larger the longer it remains unclaimed!</div>
             </div>
           </div>
         </div>
@@ -253,37 +259,29 @@
   </div>
   <div class="space-bottom-large team wf-section">
     <div class="container fadeup w-container">
-      <div class="center-content">
-        <h3 class="display-heading-3 space-bottom-large">Traits and levels</h3>
+      <div class="center-content space-left-extra-small">
+        <h3 class="display-heading-3">Traits and levels</h3>
       </div>
       <div data-w-id="484af546-e259-15ab-9cca-ce8b8abda988" class="w-layout-grid grid-two-thirds bot-chars space-bottom-large">
         <div id="w-node-_484af546-e259-15ab-9cca-ce8b8abda989-29432f09" class="row">
           <div><img src="images/site_game_ui_bot.png" width="440" alt=""></div>
         </div>
         <div class="w-layout-grid list-grid">
-          <div class="panel">
-            <div class="panel-body justify-content-center panel-body-extra-small">
-              <div>
-                <h2 class="space-bottom-extra-small">Weapons</h2>
-                <div class="text-lead">Each weapon trait has its attack power. The rarest are the most powerful! More attack power — more chances to win!</div>
-              </div>
-            </div>
+          <div id="w-node-bf2e38de-8a2c-dba0-9424-e842e28d8a43-29432f09" class="trait-description">
+            <h2 class="space-bottom-extra-small">Weapons</h2>
+            <div class="text-lead">Each weapon trait has its attack power. The rarest are the most powerful! More attack power — more chances to win!</div>
           </div>
-          <div class="panel">
-            <div class="panel-body justify-content-center panel-body-extra-small">
-              <div>
-                <h2 class="space-bottom-extra-small">Toys</h2>
-                <div class="text-lead">Baby Bots use toys not only for fun but for defense too. Rarity also affects defense amount for each Bot.</div>
-              </div>
-            </div>
+          <div id="w-node-d288f8df-27c6-963f-2e49-0752ef195a13-29432f09" class="trait-description">
+            <h2 class="space-bottom-extra-small">Toys</h2>
+            <div class="text-lead">Baby Bots use toys not only for fun but for defense too. Rarity also affects defense amount for each Bot.</div>
           </div>
-          <div class="panel">
-            <div class="panel-body justify-content-center panel-body-extra-small">
-              <div>
-                <h2 class="space-bottom-extra-small">Levels</h2>
-                <div class="text-lead">Each played Battle moves you forward to level up. Bots with higher levels have more chances to win.</div>
-              </div>
-            </div>
+          <div id="w-node-_29d0cf06-548f-1163-9fab-6c60a8fcaf58-29432f09" class="trait-description">
+            <h2 class="space-bottom-extra-small">Platforms</h2>
+            <div class="text-lead">Platforms are used by Bots as a transport vehicle. The faster it is the more it adds both to attack and defense.</div>
+          </div>
+          <div id="w-node-b284f944-5e98-2fd1-2fc1-ca0d7a58eef1-29432f09" class="trait-description">
+            <h2 class="space-bottom-extra-small">Levels</h2>
+            <div class="text-lead">Each played Battle moves your Bot towrads level up. Bots with higher levels have more chances to win.</div>
           </div>
         </div>
       </div>
@@ -308,6 +306,11 @@
                     Initial idea / code
                   </div>
                 </div>
+                <div class="row">
+                  <div class="social-list">
+                    <a href="https://twitter.com/tokezo" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" alt=""></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -325,6 +328,11 @@
                     Concept / modeling / texturing
                   </div>
                 </div>
+                <div class="row">
+                  <div class="social-list">
+                    <a href="https://instagram.com/cyber_mystic_vr" target="_blank" class="social-link-item w-inline-block"><img src="images/instagram.svg" alt=""></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -339,7 +347,12 @@
                   />
                   <h4>Eistan</h4>
                   <div class="text-lead">
-                    Texturing / rendering
+                    Animation / rendering
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="social-list">
+                    <a href="https://twitter.com/ei_stan" target="_blank" class="social-link-item w-inline-block"><img src="images/twitter.svg" alt=""></a>
                   </div>
                 </div>
               </div>
