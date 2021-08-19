@@ -1150,9 +1150,14 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
     string _baseTokenURI;
-    uint256 private _reserved = 100;
-    uint256 private _price = 0.03 ether;
+    uint256 private _esReserved = 300;
+    uint256 private _giftReserved = 100;
+    uint256 private _price = 0.035 ether;
+    uint256 private MAX_SUPPLY = 3500;
     bool public _paused = true;
+    bool public _ESpaused = false;
+
+    mapping(address => bool) public _earlySupporters;
 
     address t1 = 0xDC3Ae92E82b5182e469A659786Fe038206858a8C;
     address t2 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
@@ -1165,11 +1170,46 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         uint256 supply = totalSupply();
         require( !_paused,                              "Sale paused" );
         require( num < 21,                              "You can mint a maximum of 20 Bots" );
-        require( supply + num < 10000 - _reserved,      "Exceeds maximum Bots supply" );
+        require( supply + num <= MAX_SUPPLY - _giftReserved - _esReserved,      "Exceeds maximum Bots supply" );
         require( msg.value >= _price * num,             "Ether sent is not correct" );
 
         for(uint256 i; i < num; i++){
             _safeMint( msg.sender, supply + i );
+        }
+    }
+
+    function mintESBot() public payable {
+        uint256 supply = totalSupply();
+        uint256 balance = balanceOf(msg.sender);
+
+        require( !_ESpaused,                              "Early Supporters sale paused" );
+        require( supply + 1 <= _esReserved,      "Exceeds maximum Bots reserved supply" );
+        require( balance == 0,      "You already have some Bots" );
+        require( _earlySupporters[msg.sender],      "Sorry you are not on the Early Supporters list" );
+        require( msg.value >= _price,             "Ether sent is not correct" );
+
+        _safeMint( msg.sender, supply);
+    }
+
+    function addES(address _es) public onlyOwner() {
+        _earlySupporters[_es] = true;
+    }
+
+    function removeES(address _es) public onlyOwner() {
+        _earlySupporters[_es] = false;
+    }
+
+    function addESMany(address[] memory _ess) public onlyOwner() {
+        require(totalSupply() + _ess.length <= _esReserved, 'Would exceed ES reserved supply');
+
+        for(uint256 i = 0; i < _ess.length; i++) {
+            addES(_ess[i]);
+        }
+    }
+
+    function removeESMany(address[] memory _ess) public onlyOwner() {
+        for(uint256 i = 0; i < _ess.length; i++) {
+            removeES(_ess[i]);
         }
     }
 
@@ -1187,6 +1227,14 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         _price = _newPrice;
     }
 
+    function setESReserved(uint256 _newReserved) public onlyOwner() {
+        _esReserved = _newReserved;
+    }
+
+    function setGiftReserved(uint256 _newReserved) public onlyOwner() {
+        _giftReserved = _newReserved;
+    }
+
     function _baseURI() internal view virtual override returns (string memory) {
         return _baseTokenURI;
     }
@@ -1200,18 +1248,22 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
     }
 
     function giveAway(address _to, uint256 _amount) external onlyOwner() {
-        require( _amount <= _reserved, "Exceeds reserved Bots supply" );
+        require( _amount <= _giftReserved, "Exceeds reserved gift Bots supply" );
 
         uint256 supply = totalSupply();
         for(uint256 i; i < _amount; i++){
             _safeMint( _to, supply + i );
         }
 
-        _reserved -= _amount;
+        _giftReserved -= _amount;
     }
 
     function pause(bool val) public onlyOwner {
         _paused = val;
+    }
+
+    function ESpause(bool val) public onlyOwner {
+        _ESpaused = val;
     }
 
     function withdrawAll() public payable onlyOwner {

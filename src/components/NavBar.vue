@@ -39,7 +39,7 @@
                 </div>
               </div>
             </div>
-            <div class="navbar-buttons">
+            <!-- <div class="navbar-buttons">
               <a
                 @click="connectWeb3"
                 href=""
@@ -47,8 +47,8 @@
                 class="button w-button w--current"
                 >{{ buttonTitle }}</a
               >
-            </div>
-          </div> -->
+            </div> -->
+          </div>
         </div>
       </div>
     </div>

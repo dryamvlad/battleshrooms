@@ -40,8 +40,8 @@ module.exports = {
           `https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
         )
       },
-      gas: 31000000,
-      gasPrice: 52000000000, // 5 gwei
+      gas: 5000000,
+      gasPrice: 5000000000, // 5 gwei
       network_id: 4
     },
     ropsten: {
