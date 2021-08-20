@@ -325,7 +325,7 @@
                   />
                   <h4>Cyber Mystic</h4>
                   <div class="text-lead">
-                    Concept / modeling / texturing
+                    Principal art/ Idea
                   </div>
                 </div>
                 <div class="row">
