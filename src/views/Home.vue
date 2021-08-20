@@ -303,7 +303,7 @@
                   />
                   <h4>Tokezo</h4>
                   <div class="text-lead">
-                    Initial idea / code
+                    Initial idea / Code
                   </div>
                 </div>
                 <div class="row">
@@ -325,7 +325,7 @@
                   />
                   <h4>Cyber Mystic</h4>
                   <div class="text-lead">
-                    Principal art/ Idea
+                    Principal art / Idea
                   </div>
                 </div>
                 <div class="row">
