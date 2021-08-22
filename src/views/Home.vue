@@ -45,12 +45,12 @@
           <div class="text-lead space-left-small">Earn Eth</div>
         </div>
       </div>
-      <div class="center-content">
-        <h2 class="space-bottom-extra-small">Example</h2>
-        <p>USD amounts are for demonstration purposes. You will be able to stake any amount of Eth</p>
-      </div>
       <div class="panel">
         <div class="panel-body">
+          <div class="center-content">
+            <h2 class="space-bottom-extra-small">Example</h2>
+            <p>USD amounts are for demonstration purposes. You will be able to stake any amount of Eth</p>
+          </div>
           <div class="w-layout-grid grid-thirds space-bottom">
             <div class="panel center-content">
               <div class="panel-body">
