@@ -153,7 +153,7 @@
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div>50 Bots giveway</div>
+                <div>100 Bots giveaway</div>
               </li>
               <li class="bordered-list-item-small">
                 <div>5% charity donation decided by community</div>
@@ -171,7 +171,7 @@
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div>50 Bots giveway</div>
+                <div>100 Bots giveaway</div>
               </li>
               <li class="bordered-list-item-small">
                 <div>5% charity donation decided by community</div>
@@ -189,7 +189,7 @@
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div>50 Bots giveway</div>
+                <div>50 Bots giveaway</div>
               </li>
               <li class="bordered-list-item-small">
                 <div>Announcing 300
