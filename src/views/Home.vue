@@ -189,7 +189,7 @@
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
-                <div>50 Bots giveaway</div>
+                <div>100 Bots giveaway</div>
               </li>
               <li class="bordered-list-item-small">
                 <div>Announcing 300
@@ -206,7 +206,7 @@
       <div class="panel">
         <div class="panel-body">
           <div class="center-content"><img src="images/b4e_logo_v2.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 84vw, (max-width: 991px) 88vw, (max-width: 1919px) 90vw, 1151.8924560546875px" srcset="images/b4e_logo_v2.png 500w, images/b4e_logo_v2.png 800w, images/b4e_logo_v2.png 1152w" alt="" class="b4e-logo">
-            <h3 id="BFE" class="space-bottom-extra-small">Ethereum-based browser game</h3>
+            <h3 id="BFE" class="space-bottom-extra-small">Ethereum-based PvP browser game</h3>
             <div class="text-lead space-bottom-large">No gas fees — powered by Polygon L2<br>Launching November 2021<br></div>
           </div>
           <div class="panel bg-gradient-5 space-bottom">
