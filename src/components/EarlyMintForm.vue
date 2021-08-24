@@ -5,7 +5,6 @@
         <h3 class="display-heading-7 space-bottom">
           300 early supporters mint
         </h3>
-        <div class="text-lead space-bottom">1 Bot per Early Supporter</div>
         <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
         <div class="panel space-bottom-extra-small" style="">
           <div class="form-block w-form">
@@ -18,7 +17,7 @@
           </div>
         </div>
         <div class="center-content">
-          <div class="text-small form-hint-text">Maximum 1 bot per tx</div>
+          <div class="text-small form-hint-text">Maximum 1 bot per wallet</div>
         </div>
       </div>
     </div>

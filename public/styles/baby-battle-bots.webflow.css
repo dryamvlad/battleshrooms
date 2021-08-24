@@ -1914,7 +1914,7 @@ figcaption {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .center-content.logo-block {
@@ -4439,10 +4439,6 @@ figcaption {
     -ms-flex-line-pack: stretch;
     align-content: stretch;
     text-align: left;
-  }
-
-  .text-small {
-    display: none;
   }
 
   .panel-body.align-content-center {

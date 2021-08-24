@@ -99,6 +99,51 @@ export const ABI = [
         "type": "event"
     },
     {
+        "inputs": [
+            {
+                "internalType": "bool",
+                "name": "val",
+                "type": "bool"
+            }
+        ],
+        "name": "ESpause",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "_ESpaused",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "_earlySupporters",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
         "inputs": [],
         "name": "_paused",
         "outputs": [
@@ -109,6 +154,32 @@ export const ABI = [
             }
         ],
         "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_es",
+                "type": "address"
+            }
+        ],
+        "name": "addES",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_ess",
+                "type": "address[]"
+            }
+        ],
+        "name": "addESMany",
+        "outputs": [],
+        "stateMutability": "nonpayable",
         "type": "function"
     },
     {
@@ -201,6 +272,19 @@ export const ABI = [
     {
         "inputs": [
             {
+                "internalType": "address[]",
+                "name": "addresses",
+                "type": "address[]"
+            }
+        ],
+        "name": "giveAwayMany",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
                 "internalType": "address",
                 "name": "owner",
                 "type": "address"
@@ -231,6 +315,13 @@ export const ABI = [
             }
         ],
         "name": "mintBot",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "mintESBot",
         "outputs": [],
         "stateMutability": "payable",
         "type": "function"
@@ -289,6 +380,32 @@ export const ABI = [
             }
         ],
         "name": "pause",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_es",
+                "type": "address"
+            }
+        ],
+        "name": "removeES",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "_ess",
+                "type": "address[]"
+            }
+        ],
+        "name": "removeESMany",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
@@ -378,6 +495,58 @@ export const ABI = [
             }
         ],
         "name": "setBaseURI",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_newReserved",
+                "type": "uint256"
+            }
+        ],
+        "name": "setESReserved",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_newReserved",
+                "type": "uint256"
+            }
+        ],
+        "name": "setGiftReserved",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_newMaxPerTx",
+                "type": "uint256"
+            }
+        ],
+        "name": "setMaxPerTx",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_newMax",
+                "type": "uint256"
+            }
+        ],
+        "name": "setMaxSupply",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"

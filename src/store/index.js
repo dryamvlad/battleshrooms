@@ -42,7 +42,7 @@ export default createStore({
             const netId = await web3.eth.net.getId();
             var wallet = accounts[0];
 
-            if (netId !== 4) {
+            if (netId !== 1) {
                 createToast("Wrong network", {
                     position: 'top-center',
                     type: 'danger',
@@ -59,8 +59,8 @@ export default createStore({
             }
 
             //DEBUG
-            //var bbbContract = new web3.eth.Contract(ABI, "0xbeA022640D6Ce7FF51ec9039f6DD9cdE89EA83e4");
-            var bbbContract = new web3.eth.Contract(BabyBattleBotsGenOne.abi, BabyBattleBotsGenOne.networks[netId].address);
+            var bbbContract = new web3.eth.Contract(ABI, "0x0111546FEB693b9d9d5886e362472886b71D5337");
+            //var bbbContract = new web3.eth.Contract(BabyBattleBotsGenOne.abi, BabyBattleBotsGenOne.networks[netId].address);
             var web3Connected = true;
 
             commit('setWeb3', web3)

@@ -1154,6 +1154,7 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
     uint256 private _giftReserved = 100;
     uint256 private _price = 0.035 ether;
     uint256 private MAX_SUPPLY = 3500;
+    uint256 private maxPerTx = 10;
     bool public _paused = true;
     bool public _ESpaused = false;
 
@@ -1161,15 +1162,19 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
 
     address t1 = 0xDC3Ae92E82b5182e469A659786Fe038206858a8C;
     address t2 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
+    address t3 = 0xf5CA775911EA3F3Fe75d8Ec3756a08AfFbf4dEB6;
+    address t4 = 0x67D1D8c8c440f47F00b3CBf14dEbbF9CBEd00eeF;
 
     constructor() ERC721("Baby Battle Bots Gen One", "BBBONE") {
         _safeMint(t2, 0);
+        _safeMint(t3, 1);
+        _safeMint(t4, 2);
     }
 
     function mintBot(uint256 num) public payable {
         uint256 supply = totalSupply();
         require( !_paused,                              "Sale paused" );
-        require( num < 21,                              "You can mint a maximum of 20 Bots" );
+        require( num <= maxPerTx,                              "Exceeds maximum amount of Bots per tx" );
         require( supply + num <= MAX_SUPPLY - _giftReserved - _esReserved,      "Exceeds maximum Bots supply" );
         require( msg.value >= _price * num,             "Ether sent is not correct" );
 
@@ -1183,7 +1188,7 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         uint256 balance = balanceOf(msg.sender);
 
         require( !_ESpaused,                              "Early Supporters sale paused" );
-        require( supply + 1 <= _esReserved,      "Exceeds maximum Bots reserved supply" );
+        require( supply + 1 <= _esReserved,      "Exceeds maximum Bots early mint reserved supply" );
         require( balance == 0,      "You already have some Bots" );
         require( _earlySupporters[msg.sender],      "Sorry you are not on the Early Supporters list" );
         require( msg.value >= _price,             "Ether sent is not correct" );
@@ -1225,6 +1230,10 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
 
     function setPrice(uint256 _newPrice) public onlyOwner() {
         _price = _newPrice;
+    }
+
+    function setMaxPerTx(uint256 _newMaxPerTx) public onlyOwner() {
+        maxPerTx = _newMaxPerTx;
     }
 
     function setESReserved(uint256 _newReserved) public onlyOwner() {

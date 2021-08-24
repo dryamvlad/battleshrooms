@@ -6,7 +6,7 @@
           Add Early Supporters
         </h3>
         <form class="space-bottom-large">
-          <textarea v-model="supporters" placeholder="Large Textarea" maxlength="5000" id="Large-Textarea" name="Large-Textarea-1" data-name="Large Textarea 1" class="form-input textarea-large w-input"></textarea></form>
+          <textarea v-model="supporters" placeholder="Large Textarea" maxlength="5000000" id="Large-Textarea" name="Large-Textarea-1" data-name="Large Textarea 1" class="form-input textarea-large w-input"></textarea></form>
         <input type="submit" @click="addEarlySupporters()" value="Add" data-wait="Please wait..." class="button w-button"/>
       </div>
     </div>

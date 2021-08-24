@@ -6,7 +6,7 @@
           Mint your Bots
         </h3>
         <div class="text-lead space-bottom-extra-small">
-          Minted {{ $store.state.contractData.totalSupply }} out of {{ $store.state.contractData.genSupply }} bots in 1st generation
+          Minted {{ $store.state.contractData.totalSupply }} out of 3500 bots in 1st generation
         </div>
         <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
         <div class="panel space-bottom-extra-small" style="width: 340px;">
@@ -15,14 +15,14 @@
               <div class="circle-small social-link-item" @click="botNumDecrease()"><img src="/images/icon-minus.svg" alt="" class="icon-small"></div>
               <input type="text" style="text-align: center;" class="form-input w-input" maxlength="2" v-model="botNum" name="Bot-count" data-name="Bot count" placeholder="" id="Bot-count" required=""/>
               <div class="circle-small social-link-item" @click="botNumIncrease()"><img src="/images/icon-plus.svg" alt="" class="icon-small"></div>
-              <input type="submit" @click="mintBot()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
+              <input type="button" @click="mintBot()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
             </form>
             <div class="form-success w-form-done">
             </div>
           </div>
         </div>
         <div class="center-content">
-          <div class="text-small form-hint-text">Maximum 20 bots per tx</div>            
+          <div class="text-small">Maximum 10 bots per tx</div>            
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     botNumIncrease() {
-      if(this.botNum + 1 < 21)
+      if(this.botNum + 1 < 11)
         this.botNum++;
     },
     botNumDecrease() {

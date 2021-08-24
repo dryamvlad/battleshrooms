@@ -24,6 +24,8 @@
       </div>
     </div>
   </div>
+  <ComingSoon v-if="isPaused" />
+  <MintForm v-else />
   <div class="space-bottom-large trailer wf-section">
     <div class="container fadeup w-container">
       <div class="video-wrapper">
@@ -31,8 +33,6 @@
       </div>
     </div>
   </div>
-  <ComingSoon v-if="isPaused" />
-  <MintForm v-else />
   <div class="space-bottom-large wf-section">
     <div class="container fadeup w-container">
       <div class="center-content space-bottom-large">
@@ -282,7 +282,7 @@
           </div>
           <div id="w-node-b284f944-5e98-2fd1-2fc1-ca0d7a58eef1-29432f09" class="trait-description">
             <h2 class="space-bottom-extra-small">Levels</h2>
-            <div class="text-lead">Each played Battle moves your Bot towrads level up. Bots with higher levels have more chances to win.</div>
+            <div class="text-lead">Each played Battle moves your Bot towards level up. Bots with higher levels have more chances to win.</div>
           </div>
         </div>
       </div>
@@ -392,14 +392,14 @@
 
 <script>
 import NavBar from "../components/NavBar.vue";
-//import MintForm from "../components/MintForm.vue";
+import MintForm from "../components/MintForm.vue";
 import ComingSoon from "../components/ComingSoon.vue";
 
 export default {
   name: "Home",
   components: {
     NavBar,
-  //  MintForm,
+    MintForm,
     ComingSoon,
   },
   methods: {
