@@ -1235,6 +1235,10 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         _giftReserved = _newReserved;
     }
 
+    function setMaxSupply(uint256 _newMax) public onlyOwner() {
+        MAX_SUPPLY = _newMax;
+    }
+
     function _baseURI() internal view virtual override returns (string memory) {
         return _baseTokenURI;
     }
@@ -1256,6 +1260,16 @@ contract BabyBattleBotsGenOne is ERC721Enumerable, Ownable {
         }
 
         _giftReserved -= _amount;
+    }
+
+    function giveAwayMany(address[] memory addresses) external onlyOwner() {
+        require( addresses.length <= _giftReserved, "Exceeds reserved gift Bots supply" );
+
+        for (uint i = 0; i < addresses.length; i++) {
+            _safeMint(addresses[i], totalSupply() + 1);
+        }
+
+        _giftReserved -= addresses.length;
     }
 
     function pause(bool val) public onlyOwner {
