@@ -391,14 +391,12 @@
 
 <script>
 import NavBar from "../components/NavBar.vue";
-import MintForm from "../components/MintForm.vue";
 import ComingSoon from "../components/ComingSoon.vue";
 
 export default {
   name: "Home",
   components: {
     NavBar,
-    MintForm,
     ComingSoon,
   },
   methods: {
