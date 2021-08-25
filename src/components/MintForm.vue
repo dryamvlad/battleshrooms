@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="center-content">
-          <div class="text-small">Maximum 10 bots per tx</div>            
+          <div class="text-small">Maximum 5 bots per tx</div>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     botNumIncrease() {
-      if(this.botNum + 1 < 11)
+      if(this.botNum + 1 < 6)
         this.botNum++;
     },
     botNumDecrease() {
