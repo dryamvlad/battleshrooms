@@ -5,8 +5,12 @@
         <div class="panel-body">
             <div class="center-content">
               <h3 class="display-heading-7 coming-soon space-bottom-extra-small">
-                SOLD OUT
+                Baby Battle Bots G1 has officially SOLD OUT!
               </h3>
+              <h2 class="space-bottom-extra-small text-gray-4">Thank you for your support </h2>
+              <div class="text-lead">
+                Please check <a href="https://opensea.io/collection/baby-battle-bots-g1" target="_blank">opensea.io</a> for any secondary sales
+              </div>
 <!--               <div class="text-lead space-bottom-extra-small">
                   <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds }">
                     <h2 class="space-bottom-extra-small text-gray-4">Dropping in {{ hours }}h : {{ minutes }}m : {{ seconds }}s</h2>

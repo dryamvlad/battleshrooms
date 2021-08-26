@@ -207,6 +207,26 @@ export default createStore({
                 console.log(error)
             })
         },
+        async giveaway({ commit }, addresses) {
+            const store = this;
+
+            this.state.bbbContract.methods.giveAwayMany(addresses).estimateGas({ from: this.state.wallet }).then(function (gasAmount) {
+                store.state.bbbContract.methods
+                    .giveAwayMany(addresses)
+                    .send({ from: store.state.wallet, gas: String(gasAmount) })
+                    .on('transactionHash', function (hash) {
+                        console.log("transactionHash: ", hash)
+                    })
+                    .on('receipt', function (receipt) {
+                        console.log(receipt)
+                    })
+                    .on('error', function (error) {
+                        console.log(error)
+                    })
+            }).catch(function (error) {
+                console.log(error)
+            })
+        },
     },
     getters: {
         ethPrice(state) {

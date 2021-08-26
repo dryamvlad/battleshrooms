@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import AddEarlySupporters from '../views/AddEarlySupporters'
 import EarlyMint from '../views/EarlyMint'
+import Giveaway from '../views/Giveaway'
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         path: '/early_mint',
         name: 'Mint for Early Supporters',
         component: EarlyMint
+    },
+    {
+        path: '/giveaway',
+        name: 'Giveaway',
+        component: Giveaway
     }
 ]
 
