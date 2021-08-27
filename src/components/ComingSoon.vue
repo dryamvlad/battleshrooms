@@ -8,15 +8,14 @@
                 Baby Battle Bots G1 has officially SOLD OUT!
               </h3>
               <h2 class="space-bottom-extra-small text-gray-4">Thank you for your support </h2>
-              <div class="text-lead">
+              <div class="text-lead space-bottom">
                 Please check <a href="https://opensea.io/collection/baby-battle-bots-g1" target="_blank">opensea.io</a> for any secondary sales
               </div>
-<!--               <div class="text-lead space-bottom-extra-small">
+              <div class="text-lead space-bottom-extra-small">
                   <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds }">
-                    <h2 class="space-bottom-extra-small text-gray-4">Dropping in {{ hours }}h : {{ minutes }}m : {{ seconds }}s</h2>
+                    <h2 class="space-bottom-extra-small text-gray-4">Reveal in {{ hours }}h : {{ minutes }}m : {{ seconds }}s</h2>
                   </vue-countdown>
-                  <div class="text-lead">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
-              </div> -->
+              </div>
           </div>
         </div>
       </div>
@@ -39,7 +38,7 @@ export default {
   },
   data() {
     const now = new Date();
-    const dropTime = new Date("Wed Aug 25 2021 22:00:00 GMT+0000");
+    const dropTime = new Date("Fri Aug 27 2021 22:00:00 GMT+0000");
 
     return {
       time: dropTime - now,
