@@ -11,11 +11,11 @@
               <div class="text-lead space-bottom">
                 Please check <a href="https://opensea.io/collection/baby-battle-bots-g1" target="_blank">opensea.io</a> for any secondary sales
               </div>
-              <div class="text-lead space-bottom-extra-small">
+              <!-- <div class="text-lead space-bottom-extra-small">
                   <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds }">
                     <h2 class="space-bottom-extra-small text-gray-4">Reveal in {{ hours }}h : {{ minutes }}m : {{ seconds }}s</h2>
                   </vue-countdown>
-              </div>
+              </div> -->
           </div>
         </div>
       </div>
