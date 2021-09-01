@@ -143,7 +143,7 @@ export default createStore({
 
                     store.state.bbbContract.methods
                         .mintESBot()
-                        .send({ from: store.state.wallet, value: price, gas: String(gasAmount) })
+                        .send({ from: store.state.wallet, value: price, gas: String(1.2 * gasAmount) })
                         .on('transactionHash', function (hash) {
                             console.log("transactionHash: ", hash)
                         })
