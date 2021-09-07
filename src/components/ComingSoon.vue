@@ -9,7 +9,7 @@
               </h3>
               <h2 class="space-bottom-extra-small text-gray-4">Thank you for your support </h2>
               <div class="text-lead space-bottom">
-                Please check <a href="https://opensea.io/collection/baby-battle-bots-g1" target="_blank">opensea.io</a> for any secondary sales
+                Please check <a href="https://opensea.io/collection/baby-combat-bots-g1" target="_blank">opensea.io</a> for any secondary sales
               </div>
               <!-- <div class="text-lead space-bottom-extra-small">
                   <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds }">

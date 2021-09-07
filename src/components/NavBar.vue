@@ -12,7 +12,7 @@
           <div>
             <nav role="navigation" class="nav-menu w-nav-menu">
               <div>
-                <a href="https://twitter.com/BBBotsNFT" target="_blank" class="link-block-2 social-link-item w-inline-block"><img src="images/twitter.svg" loading="lazy" width="48" height="48" alt="" class="image-4"></a>
+                <a href="https://twitter.com/BabyCombatBots" target="_blank" class="link-block-2 social-link-item w-inline-block"><img src="images/twitter.svg" loading="lazy" width="48" height="48" alt="" class="image-4"></a>
               </div>
               <div>
                 <a href="https://discord.gg/HFVAnBS9qA" target="_blank" class="link-block-3 social-link-item w-inline-block"><img src="images/discord_logo.png" loading="lazy" width="55" height="55" alt="" class="image-5"></a>
