@@ -372,7 +372,7 @@
         </div>
         <div class="social-list">
           <a
-            href="https://twitter.com/BBBotsNFT"
+            href="https://twitter.com/BabyCombatBots"
             target="_blank"
             class="social-link-item w-inline-block"
             ><img src="images/twitter.svg" width="60" alt=""

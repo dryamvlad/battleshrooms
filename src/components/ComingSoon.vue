@@ -21,7 +21,7 @@
       </div>
 <!--       <div class="center-content">
         <div class="text-lead">
-          Join our <a href="https://discord.gg/HFVAnBS9qA" target="_blank">Discord</a> and <a href="https://twitter.com/BBBotsNFT" target="_blank">Twitter </a>for announcements and giveaways<span class="text-primary-3"></span>      
+          Join our <a href="https://discord.gg/HFVAnBS9qA" target="_blank">Discord</a> and <a href="https://twitter.com/BabyCombatBots" target="_blank">Twitter </a>for announcements and giveaways<span class="text-primary-3"></span>      
         </div>
       </div> -->
     </div>
