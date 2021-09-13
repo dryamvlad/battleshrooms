@@ -16,8 +16,10 @@ module.exports = {
       network_id: 137,
       confirmations: 2,
       timeoutBlocks: 200,
-      skipDryRun: true,
-      chainId: 137
+      chainId: 137,
+      networkCheckTimeout: 10000,
+      gas: 6000000,
+      gasPrice: 10000000000,
     },
     polygon_infura_testnet: {
       provider: function() {

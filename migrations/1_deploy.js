@@ -1,7 +1,5 @@
-const BabyBattleBotsGenOne = artifacts.require("BabyBattleBotsGenOne");
-const SimpleStorage = artifacts.require("SimpleStorage");
+const BCBPuzzlePrizes = artifacts.require("BCBPuzzlePrizes");
 
 module.exports = async function (deployer) {
-  //deployer.deploy(SimpleStorage);
-  deployer.deploy(BabyBattleBotsGenOne);
+  deployer.deploy(BCBPuzzlePrizes);
 };
