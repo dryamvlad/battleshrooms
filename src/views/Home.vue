@@ -86,7 +86,6 @@
         <div class="panel-body">
           <div class="center-content space-bottom-large">
             <h3 class="display-heading-3">3 generations</h3>
-            <div class="text-lead space-bottom">Each generation consists of 3500 Bots<span class="text-primary-3"></span></div>
           </div>
           <div data-w-id="e524ddf9-8eff-db86-9dea-9b21a0edcff4" class="w-layout-grid grid-thirds space-bottom">
             <div class="panel bg-gray-1">
@@ -94,9 +93,10 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">1</h1>
-                  </div><img src="images/bbb_generator_v06.0001.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/bbb_generator_v06.0001-p-500.png 500w, images/bbb_generator_v06.0001.png 600w" alt="" class="generation-image first">
+                  </div><img src="images/bbb_generator_v06.0001.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/bbb_generator_v06.0001-p-500.png 500w, images/bbb_generator_v06.0001.png 600w" alt="" class="generation-image first">
                 </div>
                 <div class="bot-count">
+                  <div class="text-primary-1">Sold Out</div>
                   <div class="badge bg-gradient-1">
                     <div>3500</div>
                   </div>
@@ -108,11 +108,12 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">2</h1>
-                  </div><img src="images/mistery_bot.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/mistery_bot.png 500w, images/mistery_bot.png 800w, images/mistery_bot.png 1200w" alt="" class="generation-image">
+                  </div><img src="images/mistery_bot.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/mistery_bot-p-500.png 500w, images/mistery_bot-p-800.png 800w, images/mistery_bot-p-1080.png 1080w, images/mistery_bot.png 1200w" alt="" class="generation-image">
                 </div>
                 <div class="bot-count">
+                  <div class="text-primary-1">Coming soon</div>
                   <div class="badge bg-gradient-1">
-                    <div>3500</div>
+                    <div>5000</div>
                   </div>
                 </div>
               </div>
@@ -122,11 +123,12 @@
                 <div class="center-content">
                   <div class="circle-large-2 bg-primary-1 generation-circle">
                     <h1 class="display-heading-4 generation-title">3</h1>
-                  </div><img src="images/mistery_bot.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 84vw, (max-width: 1919px) 33vw, 441.04168701171875px" srcset="images/mistery_bot.png 500w, images/mistery_bot.png 800w, images/mistery_bot.png 1200w" alt="" class="generation-image">
+                  </div><img src="images/mistery_bot.png" loading="lazy" width="643" sizes="(max-width: 767px) 100vw, (max-width: 991px) 643px, (max-width: 1919px) 33vw, 441px" srcset="images/mistery_bot-p-500.png 500w, images/mistery_bot-p-800.png 800w, images/mistery_bot-p-1080.png 1080w, images/mistery_bot.png 1200w" alt="" class="generation-image">
                 </div>
                 <div class="bot-count">
+                  <div class="text-primary-1">Coming soon</div>
                   <div class="badge bg-gradient-1">
-                    <div>3500</div>
+                    <div>5000</div>
                   </div>
                 </div>
               </div>
