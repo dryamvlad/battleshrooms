@@ -168,7 +168,7 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 2
               </h1>
-              <div  class="text-white">Late September</div>
+              <div  class="text-white">TBA</div>
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
@@ -186,7 +186,7 @@
               <h1 class="space-bottom-extra-small text-primary-3">
                 Generation 3
               </h1>
-              <div  class="text-white">Late October</div>
+              <div  class="text-white">TBA</div>
             </div>
             <ul role="list" class="w-list-unstyled">
               <li class="bordered-list-item-small">
