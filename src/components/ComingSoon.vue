@@ -1,11 +1,15 @@
 <template>
   <div class="space-bottom-large wf-section">
     <div class="container fadeup w-container">
+    </div>
+  </div>
+  <div class="space-bottom-large wf-section">
+    <div class="container fadeup w-container">
       <div class="panel space-bottom-large">
         <div class="panel-body">
             <div class="center-content">
-              <h3 class="display-heading-7 coming-soon space-bottom-extra-small">
-                Baby Battle Bots G1 has officially SOLD OUT!
+              <h3 class="display-heading-4 coming-soon space-bottom">
+                Baby Combat Bots G1 has officially SOLD OUT!
               </h3>
               <h2 class="space-bottom-extra-small text-gray-4">Thank you for your support </h2>
               <div class="text-lead space-bottom">
