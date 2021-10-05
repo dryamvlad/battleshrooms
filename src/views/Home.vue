@@ -259,7 +259,7 @@
       </div>
     </div>
   </div>
-  <div class="space-bottom-large team wf-section">
+  <!-- <div class="space-bottom-large team wf-section">
     <div class="container fadeup w-container">
       <div class="center-content space-bottom">
         <h3 class="display-heading-3">Traits and levels</h3>
@@ -288,7 +288,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="space-bottom-large team wf-section">
     <div class="container fadeup w-container">
       <div class="center-content">
