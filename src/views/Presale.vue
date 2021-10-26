@@ -19,7 +19,7 @@ import NavBar from "../components/NavBar.vue";
 import EarlyMintForm from "../components/EarlyMintForm.vue";
 
 export default {
-  name: "EarlyMint",
+  name: "Presale",
   components: {
     NavBar,
     EarlyMintForm,

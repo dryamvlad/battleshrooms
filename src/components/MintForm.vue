@@ -15,7 +15,7 @@
               <div class="circle-small social-link-item" @click="botNumDecrease()"><img src="/images/icon-minus.svg" alt="" class="icon-small"></div>
               <input type="text" style="text-align: center;" class="form-input w-input" maxlength="2" v-model="botNum" name="Bot-count" data-name="Bot count" placeholder="" id="Bot-count" required=""/>
               <div class="circle-small social-link-item" @click="botNumIncrease()"><img src="/images/icon-plus.svg" alt="" class="icon-small"></div>
-              <input type="button" @click="mintBot()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
+              <input type="button" @click="mintShroom()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
             </form>
             <div class="form-success w-form-done">
             </div>
@@ -50,9 +50,9 @@ export default {
       if(this.botNum - 1 > 0)
         this.botNum--;
     },
-    mintBot() {
+    mintShroom() {
       if(!this.$store.state.transactionPending) {
-        this.$store.dispatch('mintBot', this.botNum)
+        this.$store.dispatch('mintShroom', this.botNum)
       } else {
         createToast("You are already minting",{
             position: 'top-center',

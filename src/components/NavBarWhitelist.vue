@@ -1,13 +1,7 @@
 <template>
   <div class="navbar-wrapper sticky-top">
     <div class="container">
-      <div
-        data-collapse="medium"
-        data-animation="default"
-        data-duration="400"
-        role="banner"
-        class="navbar w-nav"
-      >
+      <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
         <div class="navbar-row">
           <div>
             <nav role="navigation" class="nav-menu-2 w-nav-menu">
@@ -35,7 +29,13 @@
               </div>
             </div>
             <div class="navbar-buttons">
-              <a href="https://dul755i8ncy.typeform.com/to/eDFVtluS" target="_blank" class="button-3 w-button">Whitelist</a>
+              <a
+                @click="connectWeb3"
+                href=""
+                aria-current="page"
+                class="button-3 w-button"
+                >{{ buttonTitle }}</a
+              >
             </div>
           </div>
         </div>

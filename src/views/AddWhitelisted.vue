@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "AddEarlySupporters",
+  name: "AddWhitelisted",
   data() {
     return {
       supporters: "",

@@ -3,7 +3,7 @@ import Web3 from "web3";
 import { ABI } from '../contracts_config.js'
 import { createToast } from 'mosha-vue-toastify';
 
-import BabyBattleBotsGenOne from '../../sol/abis/BabyBattleBotsGenOne.json'
+import BattleShroomsGenOne from '../../sol/abis/polygon/BattleShroomsGenOne.json'
 
 export default createStore({
     state: {
@@ -42,7 +42,7 @@ export default createStore({
             const netId = await web3.eth.net.getId();
             var wallet = accounts[0];
 
-            if (netId !== 1) {
+            if (netId !== 80001) {
                 createToast("Wrong network", {
                     position: 'top-center',
                     type: 'danger',
@@ -53,14 +53,13 @@ export default createStore({
                 })
                 return;
             }
-
             if (accounts.length == 0) {
                 return;
             }
 
             //DEBUG
-            var bbbContract = new web3.eth.Contract(ABI, "0x0111546FEB693b9d9d5886e362472886b71D5337");
-            //var bbbContract = new web3.eth.Contract(BabyBattleBotsGenOne.abi, BabyBattleBotsGenOne.networks[netId].address);
+            //var bbbContract = new web3.eth.Contract(ABI, "0x0111546FEB693b9d9d5886e362472886b71D5337");
+            var bbbContract = new web3.eth.Contract(BattleShroomsGenOne.abi, BattleShroomsGenOne.networks[netId].address);
             var web3Connected = true;
 
             commit('setWeb3', web3)
@@ -76,20 +75,20 @@ export default createStore({
                 owned: await this.state.bbbContract.methods.balanceOf(this.state.wallet).call(),
                 price: await this.state.bbbContract.methods.getPrice().call(),
                 paused: await this.state.bbbContract.methods._paused().call(),
-                esPaused: await this.state.bbbContract.methods._ESpaused().call(),
-                esEligible: await this.state.bbbContract.methods._earlySupporters(this.state.wallet).call(),
+                _presalePaused: await this.state.bbbContract.methods._presalePaused().call(),
+                wlEligible: await this.state.bbbContract.methods._whiteListed(this.state.wallet).call(),
             };
             this.commit('setContractData', contractData)
         },
-        async mintBot({ commit }, number) {
+        async mintShroom({ commit }, number) {
             if (this.state.bbbContract) {
                 const price = Number(this.state.contractData.price) * number;
                 const store = this;
-                this.state.bbbContract.methods.mintBot(number).estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
+                this.state.bbbContract.methods.mintShroom(number).estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
                     store.commit('setTransactionPending', true)
 
                     store.state.bbbContract.methods
-                        .mintBot(number)
+                        .mintShroom(number)
                         .send({ from: store.state.wallet, value: price, gas: String(gasAmount) })
                         .on('transactionHash', function (hash) {
                             console.log("transactionHash: ", hash)

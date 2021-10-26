@@ -9,7 +9,7 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
     string _baseTokenURI;
-    uint256 private _presaleReserved = 1000;
+    uint256 private _presaleReserved = 1100;
     uint256 private _giftReserved = 100;
     uint256 private _price = 0.05 ether;
     uint256 private _botHolderDiscont = 0.015 ether;
