@@ -10,12 +10,12 @@
       >
         <div class="navbar-row">
           <div>
-            <nav role="navigation" class="nav-menu w-nav-menu">
+            <nav role="navigation" class="nav-menu-2 w-nav-menu">
               <div>
-                <a href="https://twitter.com/BabyCombatBots" target="_blank" class="link-block-2 social-link-item w-inline-block"><img src="images/twitter.svg" loading="lazy" width="48" height="48" alt="" class="image-4"></a>
+                <a href="https://battleverse.io" target="_blank" class="link-block-4 social-link-item w-inline-block"><img src="images/BattleVerse.png" loading="lazy" width="48" height="48" srcset="images/BattleVerse-p-500.png 500w, images/BattleVerse-p-1080.png 1080w, images/BattleVerse-p-1600.png 1600w, images/BattleVerse.png 1759w" sizes="(max-width: 991px) 100vw, 48px" alt="" class="image-9"></a>
               </div>
               <div>
-                <a href="https://discord.gg/HFVAnBS9qA" target="_blank" class="link-block-3 social-link-item w-inline-block"><img src="images/discord_logo.png" loading="lazy" width="55" height="55" alt="" class="image-5"></a>
+                <p class="text-primary-1">Part of the BattleVerse project</p>
               </div>
             </nav>
           </div>

@@ -6,7 +6,7 @@
       /></a>
     </div>
   </div>
-  <NavBar />
+  <NavBarWhitelist />
   <div class="section space-bottom-large wf-section">
     <div class="container">
       <div class="w-layout-grid hero-2-grid-2">
@@ -392,13 +392,13 @@
 </template>
 
 <script>
-import NavBar from "../components/NavBar.vue";
+import NavBarWhitelist from "../components/NavBarWhitelist.vue";
 import ComingSoon from "../components/ComingSoon.vue";
 
 export default {
   name: "Home",
   components: {
-    NavBar,
+    NavBarWhitelist,
     ComingSoon,
   },
   methods: {
