@@ -1,11 +1,11 @@
 <template>
-  <NavBar />
-  <div class="space-bottom-large bfe wf-section" v-if="isEsPaused">
+  <NavBarWhitelist />
+  <div class="space-bottom-large bfe wf-section" v-if="isPresalePaused">
     <div class="container fadeup w-container">
       <div class="panel space-bottom-large">
         <div class="panel-body">
           <div class="center-content">
-            <h3 id="BFE" class="display-heading-3">Early minting starts 24 Aug</h3>
+            <h3 id="BFE" class="display-heading-3">Early minting starts 27 Oct</h3>
           </div>
         </div>
       </div>
@@ -15,13 +15,13 @@
 </template>
 
 <script>
-import NavBar from "../components/NavBar.vue";
+import NavBarWhitelist from "../components/NavBarWhitelist.vue";
 import EarlyMintForm from "../components/EarlyMintForm.vue";
 
 export default {
   name: "Presale",
   components: {
-    NavBar,
+    NavBarWhitelist,
     EarlyMintForm,
   },
   data() {
@@ -29,9 +29,9 @@ export default {
   },
   methods: {},
   computed: {
-    isEsPaused() {
-      if (typeof this.$store.state.contractData.esPaused !== "undefined") {
-        return this.$store.state.contractData.esPaused;
+    isPresalePaused() {
+      if (typeof this.$store.state.contractData.presalePaused !== "undefined") {
+        return this.$store.state.contractData.presalePaused;
       } else {
         return true;
       }

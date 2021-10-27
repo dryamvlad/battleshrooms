@@ -1,21 +1,15 @@
 <template>
-  <div class="navbar-wrapper sticky-top">
+<div class="navbar-wrapper sticky-top">
     <div class="container">
-      <div
-        data-collapse="medium"
-        data-animation="default"
-        data-duration="400"
-        role="banner"
-        class="navbar w-nav"
-      >
+      <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
         <div class="navbar-row">
-          <div>
+          <div class="div-block-1339270">
             <nav role="navigation" class="nav-menu-2 w-nav-menu">
-              <div>
-                <a href="https://battleverse.io" target="_blank" class="link-block-4 social-link-item w-inline-block"><img src="images/BattleVerse.png" loading="lazy" width="48" height="48" srcset="images/BattleVerse-p-500.png 500w, images/BattleVerse-p-1080.png 1080w, images/BattleVerse-p-1600.png 1600w, images/BattleVerse.png 1759w" sizes="(max-width: 991px) 100vw, 48px" alt="" class="image-9"></a>
+              <div class="div-block-1339268">
+                <a href="https://battleverse.io" target="_blank" class="link-block-4 social-link-item w-inline-block"><img src="images/BattleVerse.png" loading="lazy" width="48" height="48" srcset="images/BattleVerse-p-500.png 500w, images/BattleVerse-p-1080.png 1080w, images/BattleVerse-p-1600.png 1600w, images/BattleVerse.png 1759w" sizes="(max-width: 991px) 100vw, 60px" alt="" class="image-9"></a>
               </div>
               <div>
-                <p class="text-primary-1">Part of the BattleVerse project</p>
+                <p class="text-primary-1">PART OF THE BATTLEVERSE PROJECT</p>
               </div>
             </nav>
           </div>
@@ -40,13 +34,7 @@
               </div>
             </div>
             <div class="navbar-buttons">
-              <a
-                @click="connectWeb3"
-                href=""
-                aria-current="page"
-                class="button w-button w--current"
-                >{{ buttonTitle }}</a
-              >
+              <a href="" @click="connectWeb3" aria-current="page" class="button-3 w-button">{{ buttonTitle }}</a>
             </div>
           </div>
         </div>

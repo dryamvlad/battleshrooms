@@ -17,8 +17,8 @@ module.exports = {
       confirmations: 2,
       timeoutBlocks: 200,
       chainId: 137,
-      networkCheckTimeout: 10000,
-      gas: 6000000,
+      skipDryRun: false,
+      gas: 20000000,
       gasPrice: 10000000000,
     },
     polygon_infura_testnet: {

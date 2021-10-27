@@ -13,7 +13,7 @@ export default createStore({
         bbbContract: null,
         contractData: {},
         transactionPending: false,
-        price: 0.035,
+        price: 0.05,
     },
     mutations: {
         setWallet(state, newWallet) {
@@ -42,7 +42,7 @@ export default createStore({
             const netId = await web3.eth.net.getId();
             var wallet = accounts[0];
 
-            if (netId !== 80001) {
+            if (netId !== 137) {
                 createToast("Wrong network", {
                     position: 'top-center',
                     type: 'danger',
@@ -70,19 +70,21 @@ export default createStore({
             this.dispatch('getContractData');
         },
         async getContractData() {
+            console.log('getcontractdata')
             const contractData = {
                 totalSupply: await this.state.bbbContract.methods.totalSupply().call(),
                 owned: await this.state.bbbContract.methods.balanceOf(this.state.wallet).call(),
                 price: await this.state.bbbContract.methods.getPrice().call(),
                 paused: await this.state.bbbContract.methods._paused().call(),
-                _presalePaused: await this.state.bbbContract.methods._presalePaused().call(),
+                discount: await this.state.bbbContract.methods.getDiscount().call(),
+                presalePaused: await this.state.bbbContract.methods._presalePaused().call(),
                 wlEligible: await this.state.bbbContract.methods._whiteListed(this.state.wallet).call(),
             };
             this.commit('setContractData', contractData)
         },
         async mintShroom({ commit }, number) {
             if (this.state.bbbContract) {
-                const price = Number(this.state.contractData.price) * number;
+                const price = Number(this.state.contractData.price - this.state.contractData.discount) * number;
                 const store = this;
                 this.state.bbbContract.methods.mintShroom(number).estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
                     store.commit('setTransactionPending', true)
@@ -133,15 +135,15 @@ export default createStore({
                 })
             }
         },
-        async mintEarlyBot({ commit }) {
+        async mintPresale({ commit }) {
             if (this.state.bbbContract) {
                 const price = Number(this.state.contractData.price);
                 const store = this;
-                this.state.bbbContract.methods.mintESBot().estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
+                this.state.bbbContract.methods.mintPresaleShroom().estimateGas({ from: this.state.wallet, value: price }).then(function (gasAmount) {
                     store.commit('setTransactionPending', true)
 
                     store.state.bbbContract.methods
-                        .mintESBot()
+                        .mintPresaleShroom()
                         .send({ from: store.state.wallet, value: price, gas: String(1.2 * gasAmount) })
                         .on('transactionHash', function (hash) {
                             console.log("transactionHash: ", hash)
@@ -174,6 +176,7 @@ export default createStore({
                             store.commit('setTransactionPending', false)
                         })
                 }).catch(function (e, error) {
+                    console.log(e, error)
                     createToast("Error running transaction", {
                         position: 'top-center',
                         type: 'danger',

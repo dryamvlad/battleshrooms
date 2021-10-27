@@ -16,7 +16,7 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     uint256 private MAX_SUPPLY = 5000;
     uint256 private maxPerTx = 10;
     bool public _paused = true;
-    bool public _presalePaused = false;
+    bool public _presalePaused = true;
 
     mapping(address => bool) public _whiteListed;
     mapping(address => bool) public _botHolders;

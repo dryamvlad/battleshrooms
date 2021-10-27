@@ -1,33 +1,15 @@
 <template>
-  <div class="space-bottom-large wf-section">
+  <div class="space-bottom-large-2 wf-section"><img src="images/а.png" loading="lazy" sizes="100vw" srcset="images/а-p-500.png 500w, images/а-p-800.png 800w, images/а-p-1080.png 1080w, images/а.png 1142w" alt="" class="image-185-copy"><img src="images/3.png" loading="lazy" sizes="100vw" srcset="images/3-p-500.png 500w, images/3-p-800.png 800w, images/3-p-1080.png 1080w, images/3.png 1368w" alt="" class="image-185">
     <div class="container fadeup w-container">
-    </div>
-  </div>
-  <div class="space-bottom-large wf-section">
-    <div class="container fadeup w-container">
-      <div class="panel space-bottom-large">
-        <div class="panel-body">
-            <div class="center-content">
-              <h3 class="display-heading-4 coming-soon space-bottom">
-                Baby Combat Bots G1 has officially SOLD OUT!
-              </h3>
-              <h2 class="space-bottom-extra-small text-gray-4">Thank you for your support </h2>
-              <div class="text-lead space-bottom">
-                Please check <a href="https://opensea.io/collection/baby-combat-bots-g1" target="_blank">opensea.io</a> for any secondary sales
-              </div>
-              <!-- <div class="text-lead space-bottom-extra-small">
-                  <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds }">
-                    <h2 class="space-bottom-extra-small text-gray-4">Reveal in {{ hours }}h : {{ minutes }}m : {{ seconds }}s</h2>
-                  </vue-countdown>
-              </div> -->
-          </div>
+      <div class="center-content">
+        <h3 class="display-heading-7 coming-soon">PRESALE 27 OCT</h3>
+        <div class="text-lead-copy space-bottom">
+          <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds }">
+            {{ hours }}h : {{ minutes }}m : {{ seconds }}s
+          </vue-countdown>
         </div>
+        <div class="text-lead-copy space-bottom"><a href="https://dul755i8ncy.typeform.com/to/eDFVtluS" target="_blank" class="link">Whitelist</a> IS OPEN FOR FIRST 1000 ENTRIES<br><span class="text-primary-3"></span></div>
       </div>
-<!--       <div class="center-content">
-        <div class="text-lead">
-          Join our <a href="https://discord.gg/HFVAnBS9qA" target="_blank">Discord</a> and <a href="https://twitter.com/BabyCombatBots" target="_blank">Twitter </a>for announcements and giveaways<span class="text-primary-3"></span>      
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -42,7 +24,7 @@ export default {
   },
   data() {
     const now = new Date();
-    const dropTime = new Date("Fri Aug 27 2021 22:00:00 GMT+0000");
+    const dropTime = new Date("Oct 27 2021 19:00:00 GMT+0000");
 
     return {
       time: dropTime - now,

@@ -3,21 +3,21 @@
     <div class="container fadeup w-container">
       <div class="center-content">
         <h3 class="display-heading-7 space-bottom">
-          300 early supporters mint
+          Presale
         </h3>
-        <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
+        <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.contractData.price - $store.state.contractData.discount}} eth</span></div>
         <div class="panel space-bottom-extra-small" style="">
           <div class="form-block w-form">
-            <form id="mint-form" name="email-form" data-name="Mint Form" class="center-content mint-form" v-if="isEsEligible">
-              <input type="button" @click="mintEarlyBot()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
+            <form id="mint-form" name="email-form" data-name="Mint Form" class="center-content mint-form" v-if="isWhitelisted">
+              <input type="button" @click="mintPresale()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
             </form>
-            <h2 class="text-primary-1" v-else >Sorry, you are not in the Early Supporters list</h2>
+            <h2 class="text-primary-1" v-else >Sorry, you are not in the white list</h2>
             <div class="form-success w-form-done">
             </div>
           </div>
         </div>
         <div class="center-content">
-          <div class="text-small form-hint-text">Maximum 1 bot per wallet</div>
+          <div class="text-small form-hint-text">Maximum 1 Shroom per wallet</div>
         </div>
       </div>
     </div>
@@ -32,9 +32,9 @@ export default {
   components: {
   },
   methods: {
-    mintEarlyBot() {
+    mintPresale() {
       if(!this.$store.state.transactionPending) {
-        this.$store.dispatch('mintEarlyBot')
+        this.$store.dispatch('mintPresale')
       } else {
         createToast("You are already minting",{
             position: 'top-center',
@@ -53,9 +53,9 @@ export default {
         return 'Minting...'
       return 'Mint!'
     },
-    isEsEligible() {
-      if (typeof this.$store.state.contractData.esEligible !== "undefined") {
-        return this.$store.state.contractData.esEligible;
+    isWhitelisted() {
+      if (typeof this.$store.state.contractData.wlEligible !== "undefined") {
+        return this.$store.state.contractData.wlEligible;
       } else {
         return true;
       }
