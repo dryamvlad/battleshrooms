@@ -30,7 +30,7 @@
   <div class="videp wf-section">
     <div style="padding-top:56.17021276595745%" class="video w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5pDDQMzb4Xs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5pDDQMzb4Xs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5pDDQMzb4Xs%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
   </div>
-  <MintForm />
+  <ComingSoon />
   <div class="section-7 wf-section">
     <div data-w-id="d6378ec7-c46d-aea6-9ee3-2609a3d77ae5" class="container-4 w-container">
       <div class="text-block">3 GENERATIONS</div>
@@ -269,8 +269,8 @@ export default {
   name: "Home",
   components: {
     NavBarWhitelist,
-    //ComingSoon,
-    MintForm
+    ComingSoon,
+    //MintForm
   },
   methods: {
     mintBot() {
