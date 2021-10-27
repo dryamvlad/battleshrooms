@@ -38,10 +38,10 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
         if(_botHolders[msg.sender])
             currentPrice -= _botHolderDiscont;
 
-        require( !_paused,                              "Sale paused" );
-        require( num <= maxPerTx,                              "Exceeds maximum amount of Shrooms per tx" );
-        require( supply + num <= MAX_SUPPLY - _giftReserved - _presaleReserved,      "Exceeds maximum Shrooms supply" );
-        require( msg.value >= currentPrice * num,             "Ether sent is not correct" );
+        require( !_paused, "Sale paused" );
+        require( num <= maxPerTx, "Exceeds maximum amount of Shrooms per tx" );
+        require( supply + num <= MAX_SUPPLY - _giftReserved - _presaleReserved, "Exceeds maximum Shrooms supply" );
+        require( msg.value >= currentPrice * num, "Ether sent is not correct" );
 
         for(uint256 i; i < num; i++){
             _safeMint( msg.sender, supply + i );

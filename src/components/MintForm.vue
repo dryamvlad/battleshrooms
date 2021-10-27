@@ -3,10 +3,10 @@
     <div class="container fadeup w-container">
       <div class="center-content">
         <h3 class="display-heading-7 space-bottom">
-          Mint your Bots
+          Mint your Shrooms
         </h3>
         <div class="text-lead space-bottom-extra-small">
-          Minted {{ $store.state.contractData.totalSupply }} out of 3500 bots in 1st generation
+          Minted {{ $store.state.contractData.totalSupply }} out of 5000 Shrooms in 1st generation
         </div>
         <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
         <div class="panel space-bottom-extra-small" style="width: 340px;">

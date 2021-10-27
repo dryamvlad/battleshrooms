@@ -10,8 +10,13 @@
   <div class="herohero wf-section">
     <div class="container">
       <div class="w-layout-grid hero-2-grid-2">
-        <div id="w-node-_3254c8ec-4cd9-1cef-11e2-c40f831f6615-1d7546a0" class="hero-content-2 center-content"><img src="images/Group-6.png" loading="lazy" width="473" sizes="100vw" srcset="images/Group-6-p-500.png 500w, images/Group-6-p-800.png 800w, images/Group-6-p-1080.png 1080w, images/Group-6.png 1416w" alt="" class="logo"></div>
-        <div id="w-node-cf4b71ba-e520-71d8-a29a-87c4cf7d17b8-1d7546a0" class="hero-content-2 center-content"><img src="images/shroom.png" loading="lazy" width="473" sizes="100vw" srcset="images/shroom-p-500.png 500w, images/shroom-p-800.png 800w, images/shroom-p-1080.png 1080w, images/shroom.png 1546w" alt="" class="logo"></div>
+        <div id="w-node-_3254c8ec-4cd9-1cef-11e2-c40f831f6615-1d7546a0" class="hero-content-2 center-content"><img src="images/Group-6.png" loading="lazy" width="473" sizes="(max-width: 479px) 95vw, (max-width: 767px) 92vw, (max-width: 991px) 600px, 599.984375px" srcset="images/Group-6-p-500.png 500w, images/Group-6-p-800.png 800w, images/Group-6-p-1080.png 1080w, images/Group-6.png 1416w" alt="" class="logo"></div>
+        <div class="hero-content-2 center-content">
+          <div data-poster-url="videos/hero_shroom_4-poster-00001.jpg" data-video-urls="videos/hero_shroom_4-transcode.mp4,videos/hero_shroom_4-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-2 w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/hero_shroom_4-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+              <source src="videos/hero_shroom_4-transcode.mp4" data-wf-ignore="true">
+              <source src="videos/hero_shroom_4-transcode.webm" data-wf-ignore="true">
+            </video></div>
+        </div>
       </div>
     </div>
   </div>
@@ -25,7 +30,7 @@
   <div class="videp wf-section">
     <div style="padding-top:56.17021276595745%" class="video w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5pDDQMzb4Xs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5pDDQMzb4Xs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5pDDQMzb4Xs%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
   </div>
-  <ComingSoon />
+  <MintForm />
   <div class="section-7 wf-section">
     <div data-w-id="d6378ec7-c46d-aea6-9ee3-2609a3d77ae5" class="container-4 w-container">
       <div class="text-block">3 GENERATIONS</div>
@@ -257,13 +262,15 @@
 <script>
 import NavBarWhitelist from "../components/NavBarWhitelist.vue";
 import NavBar from "../components/NavBar.vue";
+import MintForm from "../components/MintForm.vue";
 import ComingSoon from "../components/ComingSoon.vue";
 
 export default {
   name: "Home",
   components: {
     NavBarWhitelist,
-    ComingSoon
+    //ComingSoon,
+    MintForm
   },
   methods: {
     mintBot() {
