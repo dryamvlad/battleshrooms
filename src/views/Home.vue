@@ -21,8 +21,9 @@
       </div>
     </div>
   </div>
-  <ComingSoon v-if="isPaused"/>
-  <MintForm v-else/>
+  <EarlyMintForm v-if="isPresalePaused === false"/>
+  <MintForm v-else-if="isPaused === false"/>
+  <ComingSoon v-else/>
   <div class="space-bottom-large-3 trailer wf-section"><img src="images/левоshrooms_back_night2.png" loading="lazy" sizes="100vw" srcset="images/левоshrooms_back_night2-p-500.png 500w, images/левоshrooms_back_night2.png 556w" alt="" class="image-18"><img src="images/правоshrooms_back_night1-1.png" loading="lazy" alt="" class="image-124">
     <div class="container fadeup w-container">
       <div class="video-wrapper">
@@ -151,6 +152,7 @@
 import NavBarWhitelist from "../components/NavBarWhitelist.vue";
 import NavBar from "../components/NavBar.vue";
 import MintForm from "../components/MintForm.vue";
+import EarlyMintForm from "../components/EarlyMintForm.vue";
 import ComingSoon from "../components/ComingSoon.vue";
 
 export default {
@@ -159,7 +161,8 @@ export default {
     NavBar,
     NavBarWhitelist,
     ComingSoon,
-    MintForm
+    MintForm,
+    EarlyMintForm
   },
   methods: {
     mintBot() {
@@ -176,6 +179,13 @@ export default {
     isPaused() {
       if(typeof this.$store.state.contractData.paused !== "undefined") {
         return this.$store.state.contractData.paused;
+      } else {
+        return true;
+      }
+    },
+    isPresalePaused() {
+      if (typeof this.$store.state.contractData.presalePaused !== "undefined") {
+        return this.$store.state.contractData.presalePaused;
       } else {
         return true;
       }

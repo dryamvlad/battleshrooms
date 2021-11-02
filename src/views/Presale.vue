@@ -1,5 +1,8 @@
 <template>
   <NavBar />
+  <div class="center-content space-bottom-large">
+    <img src="images/Group-6.png" loading="lazy" width="300" sizes="(max-width: 479px) 95vw, (max-width: 767px) 92vw, (max-width: 991px) 600px, 599.984375px" srcset="images/Group-6-p-500.png 500w, images/Group-6-p-800.png 800w, images/Group-6-p-1080.png 1080w, images/Group-6.png 1416w">
+  </div>
   <div class="space-bottom-large-2 wf-section" v-if="isPresalePaused">
     <img src="images/а.png" loading="lazy" sizes="100vw" srcset="images/а-p-500.png 500w, images/а-p-800.png 800w, images/а-p-1080.png 1080w, images/а.png 1142w" alt="" class="image-185-copy">
     <img src="images/3.png" loading="lazy" sizes="100vw" srcset="images/3-p-500.png 500w, images/3-p-800.png 800w, images/3-p-1080.png 1080w, images/3.png 1368w" alt="" class="image-185">

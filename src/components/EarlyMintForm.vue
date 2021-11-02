@@ -1,7 +1,5 @@
 <template>
   <div class="space-bottom-large-2 mint-section wf-section">
-    <img src="images/а.png" loading="lazy" sizes="100vw" srcset="images/а-p-500.png 500w, images/а-p-800.png 800w, images/а-p-1080.png 1080w, images/а.png 1142w" alt="" class="image-185-copy">
-    <img src="images/3.png" loading="lazy" sizes="100vw" srcset="images/3-p-500.png 500w, images/3-p-800.png 800w, images/3-p-1080.png 1080w, images/3.png 1368w" alt="" class="image-185">
     <div class="container fadeup w-container">
       <div class="center-content">
         <h3 class="display-heading-7 space-bottom">
