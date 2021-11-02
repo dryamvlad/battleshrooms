@@ -16,8 +16,11 @@
           </div>
         </div>
         <div class="center-content">
-          <div class="text-small"><br/>Your price: {{mintPrice}} MATIC</div>
-          <div class="text-small form-hint-text">Maximum 1 Shroom per wallet</div>
+          <div class="text-lead-2 space-bottom">
+            <br/>
+            Price: {{mintPrice}} MATIC<br/>
+            Maximum 10 Shrooms per tx
+          </div>
         </div>
       </div>
     </div>

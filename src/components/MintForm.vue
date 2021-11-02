@@ -19,7 +19,7 @@
         <div class="center-content">
           <div class="text-lead-2 space-bottom">
             <br/>
-            Your price: {{mintPrice}} MATIC<br/>
+            Price: {{mintPrice}} MATIC<br/>
             Maximum 10 Shrooms per tx
           </div>
         </div>

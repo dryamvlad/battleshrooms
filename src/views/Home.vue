@@ -6,8 +6,9 @@
       /></a>
     </div>
   </div>
-  <NavBarWhitelist v-if="isPaused"/>
-  <NavBar v-else/>
+  <NavBar v-if="isPresalePaused === false"/>
+  <NavBar v-else-if="isPaused === false"/>
+  <NavBarWhitelist v-else/>
   <div class="herohero wf-section">
     <div class="container">
       <div class="w-layout-grid hero-2-grid-2">
