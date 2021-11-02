@@ -1,28 +1,27 @@
 <template>
-  <div class="space-bottom-large mint-section wf-section">
-    <div class="container fadeup w-container">
-      <div class="center-content">
-        <h3 class="display-heading-7 space-bottom">
-          Mint your Shrooms
-        </h3>
-        <div class="text-lead space-bottom-extra-small">
-          Minted {{ $store.state.contractData.totalSupply }} out of 5000 Shrooms in 1st generation
-        </div>
-        <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.price}} eth</span></div>
-        <div class="panel space-bottom-extra-small" style="width: 340px;">
-          <div class="form-block w-form">
-            <form id="mint-form" name="email-form" data-name="Mint Form" class="center-content mint-form">
-              <div class="circle-small social-link-item" @click="botNumDecrease()"><img src="/images/icon-minus.svg" alt="" class="icon-small"></div>
-              <input type="text" style="text-align: center;" class="form-input w-input" maxlength="2" v-model="botNum" name="Bot-count" data-name="Bot count" placeholder="" id="Bot-count" required=""/>
-              <div class="circle-small social-link-item" @click="botNumIncrease()"><img src="/images/icon-plus.svg" alt="" class="icon-small"></div>
-              <input type="button" @click="mintShroom()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
-            </form>
-            <div class="form-success w-form-done">
+<div class="space-bottom-large-4 mint-section wf-section">
+    <div class="container-2 fadeup w-container">
+      <div class="center-content-3">
+        <h3 class="display-heading-8 space-bottom-extra-small">Mint your Shrooms</h3>
+        <div class="text-lead-2 space-bottom">Minted <span class="text-primary-4">{{ $store.state.contractData.totalSupply }}</span> Shrooms in <span class="text-primary-4">1st generation</span></div>
+        <div class="panel-2">
+          <div>
+            <div id="mint-form" class="form-block-2 w-form">
+              <form id="mint-form" name="email-form" data-name="Email Form" class="center-content-3 mint-form">
+                <div class="circle-small social-link-item" @click="numDecrease()"><img src="images/icon-minus.svg" alt=""></div>
+                <input v-model="num" type="text" class="form-input w-input" maxlength="256" name="Bot-count-2" data-name="Bot Count 2" placeholder="1" id="Bot-count-2" required="">
+                <div class="circle-small social-link-item" @click="numIncrease()"><img src="images/icon-plus.svg" alt=""></div>
+                <input type="button" @click="mintShroom()" v-model="buttonTitle" data-wait="Please wait..." class="button-4 space-left w-button">
+              </form>
             </div>
           </div>
         </div>
         <div class="center-content">
-          <div class="text-small">Maximum 5 bots per tx</div>
+          <div class="text-lead-2 space-bottom">
+            <br/>
+            Your price: {{mintPrice}} MATIC<br/>
+            Maximum 10 Shrooms per tx
+          </div>
         </div>
       </div>
     </div>
@@ -38,21 +37,21 @@ export default {
   },
   data() {
     return {
-      botNum: 1,
+      num: 1,
     }
   },
   methods: {
-    botNumIncrease() {
-      if(this.botNum + 1 < 6)
-        this.botNum++;
+    numIncrease() {
+      if(this.num < this.$store.state.contractData.numPerTx)
+        this.num++;
     },
-    botNumDecrease() {
-      if(this.botNum - 1 > 0)
-        this.botNum--;
+    numDecrease() {
+      if(this.num - 1 > 0)
+        this.num--;
     },
     mintShroom() {
       if(!this.$store.state.transactionPending) {
-        this.$store.dispatch('mintShroom', this.botNum)
+        this.$store.dispatch('mintShroom', this.num)
       } else {
         createToast("You are already minting",{
             position: 'top-center',
@@ -70,6 +69,9 @@ export default {
       if(this.$store.state.transactionPending)
         return 'Minting...'
       return 'Mint!'
+    },
+    mintPrice(){
+      return this.$store.getters.ethPrice;
     }
   },
 };

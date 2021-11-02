@@ -7,7 +7,7 @@
         </h3>
         <form class="space-bottom-large">
           <textarea v-model="supporters" placeholder="Large Textarea" maxlength="5000000" id="Large-Textarea" name="Large-Textarea-1" data-name="Large Textarea 1" class="form-input textarea-large w-input"></textarea></form>
-        <input type="submit" @click="addEarlySupporters()" value="Add" data-wait="Please wait..." class="button w-button"/>
+        <input type="submit" @click="addWhiteListed()" value="Add" data-wait="Please wait..." class="button w-button"/>
       </div>
     </div>
   </div>
@@ -22,8 +22,8 @@ export default {
     }
   },
   methods: {
-    addEarlySupporters() {
-      this.$store.dispatch('addEarlySupporters', this.supporters.split("\n"))
+    addWhiteListed() {
+      this.$store.dispatch('addWhiteListed', this.supporters.split("\n"))
     }
   },
 };

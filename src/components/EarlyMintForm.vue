@@ -1,22 +1,24 @@
 <template>
-  <div class="space-bottom-large mint-section wf-section">
+  <div class="space-bottom-large-2 mint-section wf-section">
+    <img src="images/а.png" loading="lazy" sizes="100vw" srcset="images/а-p-500.png 500w, images/а-p-800.png 800w, images/а-p-1080.png 1080w, images/а.png 1142w" alt="" class="image-185-copy">
+    <img src="images/3.png" loading="lazy" sizes="100vw" srcset="images/3-p-500.png 500w, images/3-p-800.png 800w, images/3-p-1080.png 1080w, images/3.png 1368w" alt="" class="image-185">
     <div class="container fadeup w-container">
       <div class="center-content">
         <h3 class="display-heading-7 space-bottom">
-          Presale
+          Battle Shrooms presale is up!
         </h3>
-        <div class="text-lead space-bottom">Price: <span class="text-primary-2">{{$store.state.contractData.price - $store.state.contractData.discount}} eth</span></div>
         <div class="panel space-bottom-extra-small" style="">
           <div class="form-block w-form">
             <form id="mint-form" name="email-form" data-name="Mint Form" class="center-content mint-form" v-if="isWhitelisted">
-              <input type="button" @click="mintPresale()" v-model="buttonTitle" data-wait="Please wait..." class="button w-button"/>
+              <input type="button" @click="mintPresale()" v-model="buttonTitle" data-wait="Please wait..." class="button-4 w-button"/>
             </form>
-            <h2 class="text-primary-1" v-else >Sorry, you are not in the white list</h2>
+            <h3 class="text-primary" v-else >Sorry, you are not in the white list</h3>
             <div class="form-success w-form-done">
             </div>
           </div>
         </div>
         <div class="center-content">
+          <div class="text-small"><br/>Your price: {{mintPrice}} MATIC</div>
           <div class="text-small form-hint-text">Maximum 1 Shroom per wallet</div>
         </div>
       </div>
@@ -59,6 +61,9 @@ export default {
       } else {
         return true;
       }
+    },
+    mintPrice(){
+      return this.$store.getters.ethPrice;
     },
   },
 };

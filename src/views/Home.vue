@@ -6,7 +6,8 @@
       /></a>
     </div>
   </div>
-  <NavBarWhitelist />
+  <NavBarWhitelist v-if="isPaused"/>
+  <NavBar v-else/>
   <div class="herohero wf-section">
     <div class="container">
       <div class="w-layout-grid hero-2-grid-2">
@@ -20,6 +21,8 @@
       </div>
     </div>
   </div>
+  <ComingSoon v-if="isPaused"/>
+  <MintForm v-else/>
   <div class="space-bottom-large-3 trailer wf-section"><img src="images/левоshrooms_back_night2.png" loading="lazy" sizes="100vw" srcset="images/левоshrooms_back_night2-p-500.png 500w, images/левоshrooms_back_night2.png 556w" alt="" class="image-18"><img src="images/правоshrooms_back_night1-1.png" loading="lazy" alt="" class="image-124">
     <div class="container fadeup w-container">
       <div class="video-wrapper">
@@ -27,83 +30,14 @@
       </div>
     </div>
   </div>
-  <div class="videp wf-section">
-    <div style="padding-top:56.17021276595745%" class="video w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F5pDDQMzb4Xs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D5pDDQMzb4Xs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F5pDDQMzb4Xs%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" title="YouTube embed" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="true"></iframe></div>
-  </div>
-  <ComingSoon />
   <div class="section-7 wf-section">
     <div data-w-id="d6378ec7-c46d-aea6-9ee3-2609a3d77ae5" class="container-4 w-container">
       <div class="text-block">3 GENERATIONS</div>
     </div>
     <div data-w-id="8e565fca-8a98-f7c5-f8b3-4f14f8e673ef" class="container-5 w-container">
-      <div class="w-layout-grid grid-185046"><img src="images/Gen-1.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100vw" srcset="images/Gen-1-p-500.png 500w, images/Gen-1.png 1614w" alt=""><img src="images/Gen-2.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100vw" srcset="images/Gen-2-p-500.png 500w, images/Gen-2.png 1614w" alt=""><img src="images/Gen-3.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100vw" srcset="images/Gen-3-p-500.png 500w, images/Gen-3.png 1614w" alt=""></div>
-    </div>
-  </div>
-  <div class="space-bottom-large-3 wf-section">
-    <div class="container fadeup w-container">
-      <div class="panel">
-        <div class="panel-body">
-          <div class="center-content space-bottom-large">
-            <h3 class="display-heading-3">3 generations</h3>
-          </div>
-          <div data-w-id="22436dd1-2f28-9994-729e-aad987b8523a" class="w-layout-grid grid-thirds space-bottom">
-            <div class="panel bg-gray-1">
-              <div class="panel-body justify-content-center">
-                <div class="center-content"><img src="images/shrooms_02.png" loading="lazy" width="643" sizes="100vw" srcset="images/shrooms_02-p-500.png 500w, images/shrooms_02.png 600w" alt="" class="generation-image first"></div>
-                <div class="bot-count">
-                  <div class="text-primary-1">Coming 28 Oct</div>
-                  <div class="badge bg-gradient-1">
-                    <div class="text-block-475">5000</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel bg-gray-1">
-              <div class="panel-body justify-content-center">
-                <div class="center-content">
-                  <div class="circle-large-2 bg-primary-1 generation-circle">
-                    <h1 class="display-heading-4 generation-title">2</h1>
-                  </div><img src="images/Frame-191.png" loading="lazy" width="643" sizes="100vw" srcset="images/Frame-191-p-500.png 500w, images/Frame-191.png 578w" alt="" class="generation-image">
-                </div>
-                <div class="bot-count">
-                  <div class="text-primary-1">Coming soon</div>
-                  <div class="badge bg-gradient-1">
-                    <div class="text-block-476">5000</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="panel bg-gray-1">
-              <div class="panel-body justify-content-center">
-                <div class="center-content">
-                  <div class="circle-large-2 bg-primary-1 generation-circle">
-                    <h1 class="display-heading-4 generation-title">3</h1>
-                  </div><img src="images/Frame-190.png" loading="lazy" width="643" sizes="100vw" srcset="images/Frame-190-p-500.png 500w, images/Frame-190.png 578w" alt="" class="generation-image">
-                </div>
-                <div class="bot-count">
-                  <div class="text-primary-1">Coming soon</div>
-                  <div class="badge bg-gradient-1">
-                    <div class="text-block-477">5000</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w-container"></div>
-  </div>
-  <div class="_3generatins wf-section">
-    <div class="div-block-6">
-      <div class="w-layout-grid grid-11">
-        <div>
-          <div class="text-block">3 generations</div>
-        </div>
-        <div>
-          <div class="w-layout-grid grid-12"><img src="images/Group-5842.png" loading="lazy" sizes="100vw" srcset="images/Group-5842-p-500.png 500w, images/Group-5842.png 1656w" alt=""><img src="images/Group-5843.png" loading="lazy" sizes="100vw" srcset="images/Group-5843-p-500.png 500w, images/Group-5843.png 1656w" alt=""><img src="images/Group-5843.png" loading="lazy" sizes="100vw" srcset="images/Group-5843-p-500.png 500w, images/Group-5843.png 1656w" alt=""></div>
-        </div>
-      </div>
+      <div class="w-layout-grid grid-185046">
+        <img src="images/Gen-1.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100vw" srcset="images/Gen-1-p-500.png 500w, images/Gen-1.png 1614w" alt="">
+        <img src="images/Gen-2.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100vw" srcset="images/Gen-2-p-500.png 500w, images/Gen-2.png 1614w" alt=""><img src="images/Gen-3.png" loading="lazy" sizes="(max-width: 479px) 90vw, 100vw" srcset="images/Gen-3-p-500.png 500w, images/Gen-3.png 1614w" alt=""></div>
     </div>
   </div>
   <div class="section-6 wf-section"><img src="images/shrooms_back2-1.png" loading="lazy" alt="" class="image-183"><img src="images/shrooms_back2-2.png" loading="lazy" alt="" class="image-181-copy"><img src="images/shrooms_back-3.png" loading="lazy" alt="" class="image-181">
@@ -194,52 +128,6 @@
       </div>
     </div>
   </div>
-  <div class="section-2 wf-section">
-    <div data-w-id="2664b126-1c2e-70ea-9e50-68942b6983a7" class="div-block-9">
-      <div class="w-layout-grid grid-17">
-        <div>
-          <div class="text-block">Team</div>
-        </div>
-        <div id="w-node-_9c2209f4-63ca-1816-fa66-cdebeb3a6382-1d7546a0" class="div-block-10"><img src="images/Group-5855.png" loading="lazy" sizes="100vw" srcset="images/Group-5855-p-500.png 500w, images/Group-5855-p-800.png 800w, images/Group-5855-p-1080.png 1080w, images/Group-5855.png 2364w" alt="" class="image-5"></div>
-        <div class="div-block-11"><img src="images/Group-5856.png" loading="lazy" alt=""></div>
-      </div>
-    </div>
-  </div>
-  <footer id="footer" class="footer wf-section">
-    <div class="div-block-13">
-      <div class="w-layout-grid grid-18">
-        <div class="div-block-17">
-          <div class="w-layout-grid grid-19">
-            <div>
-              <div class="text-block-462"><strong class="text124">This is just a start and we&#x27;re looking forward to grow big. Join our community and rock with us!</strong></div>
-            </div>
-            <div id="w-node-_6ba9eae9-cf13-38a2-fef5-3f2ec75e9697-1d7546a0" class="div-block-18">
-              <div class="w-layout-grid grid-20">
-                <div class="div-block-21"><img src="images/discord.png" loading="lazy" height="50" alt="">
-                  <a href="https://discord.gg/HFVAnBS9qA" target="_blank" class="link-block-3 w-inline-block"></a>
-                </div>
-                <div class="div-block-22"><img src="images/twitter.png" loading="lazy" height="45" alt="">
-                  <a href="https://twitter.com/battleverse_io" target="_blank" class="link-block-3 w-inline-block"></a>
-                </div>
-                <div class="div-block-23"><img src="images/image-181.png" loading="lazy" sizes="100vw" height="50" srcset="images/image-181-p-500.png 500w, images/image-181-p-800.png 800w, images/image-181.png 968w" alt="">
-                  <a href="http://battleverse.medium.com/" target="_blank" class="link-block-3 w-inline-block"></a>
-                </div>
-                <div class="div-block-24"><img src="images/instagram.png" loading="lazy" height="45" alt="">
-                  <a href="https://www.instagram.com/battleverse_io/" target="_blank" class="link-block-3 w-inline-block"></a>
-                </div>
-                <div class="div-block-25"><img src="images/youtube.png" loading="lazy" width="55" height="" alt="">
-                  <a href="https://www.youtube.com/channel/UCDm5vi_H3NA3Edt9CYgYxNw" target="_blank" class="link-block-3 w-inline-block"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="text-block-474">Copyright © 2021. All Rights Reserved by BattleVerse</div>
-        </div>
-      </div>
-    </div>
-  </footer>
   <div class="space-bottom-large-4 wf-section">
     <div class="container-2 fadeup w-container">
       <div class="center-content-2">
@@ -268,9 +156,10 @@ import ComingSoon from "../components/ComingSoon.vue";
 export default {
   name: "Home",
   components: {
+    NavBar,
     NavBarWhitelist,
     ComingSoon,
-    //MintForm
+    MintForm
   },
   methods: {
     mintBot() {

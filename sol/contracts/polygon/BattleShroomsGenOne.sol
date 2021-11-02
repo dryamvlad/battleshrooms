@@ -11,8 +11,8 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     string _baseTokenURI;
     uint256 private _presaleReserved = 1100;
     uint256 private _giftReserved = 100;
-    uint256 private _price = 0.05 ether;
-    uint256 private _botHolderDiscont = 0.015 ether;
+    uint256 private _price = 100 ether;
+    uint256 private _botHolderDiscont = 40 ether;
     uint256 private MAX_SUPPLY = 5000;
     uint256 private maxPerTx = 10;
     bool public _paused = true;
@@ -21,14 +21,12 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     mapping(address => bool) public _whiteListed;
     mapping(address => bool) public _botHolders;
 
-    address t2 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
-    address t3 = 0xf5CA775911EA3F3Fe75d8Ec3756a08AfFbf4dEB6;
-    address t4 = 0x67D1D8c8c440f47F00b3CBf14dEbbF9CBEd00eeF;
+    address t1 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
 
     constructor() ERC721("Battle Shrooms Gen One", "BSONE") {
-        _safeMint(t2, 0);
-        _safeMint(t3, 1);
-        _safeMint(t4, 2);
+        for(uint256 i; i < 10; i++){
+            _safeMint( t1, i );
+        }
     }
 
     function mintShroom(uint256 num) public payable {
@@ -56,11 +54,11 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
         if(_botHolders[msg.sender])
             currentPrice -= _botHolderDiscont;
 
-        require( !_presalePaused,                              "Presale paused" );
-        require( supply + 1 <= _presaleReserved,      "Exceeds maximum Shrooms presale reserved supply" );
-        require( balance == 0,      "You already have some Shrooms" );
-        require( _whiteListed[msg.sender],      "Sorry you are not whitelisted" );
-        require( msg.value >= currentPrice,             "Ether sent is not correct" );
+        require( !_presalePaused, "Presale paused" );
+        require( supply + 1 <= _presaleReserved, "Exceeds maximum Shrooms presale reserved supply" );
+        require( balance == 0, "You already have some Shrooms" );
+        require( _whiteListed[msg.sender], "Sorry you are not whitelisted" );
+        require( msg.value >= currentPrice, "Ether sent is not correct" );
 
         _safeMint( msg.sender, supply);
         _presaleReserved -= 1;
@@ -141,10 +139,7 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     }
 
     function getDiscount() public view returns (uint256){
-        if(_botHolders[msg.sender])
-            return _botHolderDiscont;
-        else
-            return 0;
+        return _botHolderDiscont;
     }
 
     function giveAway(address _to, uint256 _amount) external onlyOwner() {
@@ -183,6 +178,6 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     function withdrawAll() public payable onlyOwner {
         uint256 _balance = address(this).balance;
 
-        require(payable(t2).send(_balance));
+        require(payable(t1).send(_balance));
     }
 }
