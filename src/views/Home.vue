@@ -6,9 +6,7 @@
       /></a>
     </div>
   </div>
-  <NavBar v-if="isPresalePaused === false"/>
-  <NavBar v-else-if="isPaused === false"/>
-  <NavBarWhitelist v-else/>
+  <NavBar/>
   <div class="herohero wf-section">
     <div class="container">
       <div class="w-layout-grid hero-2-grid-2">
@@ -160,7 +158,6 @@ export default {
   name: "Home",
   components: {
     NavBar,
-    NavBarWhitelist,
     ComingSoon,
     MintForm,
     EarlyMintForm
