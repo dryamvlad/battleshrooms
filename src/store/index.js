@@ -43,7 +43,7 @@ export default createStore({
             var wallet = accounts[0];
 
             if (netId !== 137) {
-                createToast("Wrong network", {
+                createToast("Wrong network. Please change to Polygon", {
                     position: 'top-center',
                     type: 'danger',
                     transition: 'slide',
@@ -70,19 +70,22 @@ export default createStore({
             this.dispatch('getContractData');
         },
         async getContractData() {
-            console.log('getcontractdata')
-            const contractData = {
-                totalSupply: await this.state.bbbContract.methods.totalSupply().call(),
-                owned: await this.state.bbbContract.methods.balanceOf(this.state.wallet).call(),
-                price: await this.state.bbbContract.methods.getPrice().call(),
-                paused: await this.state.bbbContract.methods._paused().call(),
-                discount: await this.state.bbbContract.methods.getDiscount().call(),
-                numPerTx: 10,
-                presalePaused: await this.state.bbbContract.methods._presalePaused().call(),
-                wlEligible: await this.state.bbbContract.methods._whiteListed(this.state.wallet).call(),
-                botHolder: await this.state.bbbContract.methods._botHolders(this.state.wallet).call()
-            };
-            this.commit('setContractData', contractData)
+            try {
+                const contractData = {
+                    totalSupply: await this.state.bbbContract.methods.totalSupply().call(),
+                    owned: await this.state.bbbContract.methods.balanceOf(this.state.wallet).call(),
+                    price: await this.state.bbbContract.methods.getPrice().call(),
+                    paused: await this.state.bbbContract.methods._paused().call(),
+                    discount: await this.state.bbbContract.methods.getDiscount().call(),
+                    numPerTx: 10,
+                    presalePaused: await this.state.bbbContract.methods._presalePaused().call(),
+                    wlEligible: await this.state.bbbContract.methods._whiteListed(this.state.wallet).call(),
+                    botHolder: await this.state.bbbContract.methods._botHolders(this.state.wallet).call()
+                };
+                this.commit('setContractData', contractData)
+            } catch(e) {
+                console.log(JSON.parse(e.slice(25)));
+            }
         },
         async mintShroom({ commit }, number) {
             if (this.state.bbbContract) {

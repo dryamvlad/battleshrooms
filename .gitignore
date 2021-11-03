@@ -2,6 +2,7 @@
 node_modules
 /dist
 /webflow
+whitelist.txt
 
 
 # local env files
