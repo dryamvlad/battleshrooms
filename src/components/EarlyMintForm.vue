@@ -19,7 +19,7 @@
           <div class="text-lead-2 space-bottom">
             <br/>
             Price: {{mintPrice}} MATIC<br/>
-            Maximum 10 Shrooms per tx
+            Maximum 1 Shroom per wallet
           </div>
         </div>
       </div>
