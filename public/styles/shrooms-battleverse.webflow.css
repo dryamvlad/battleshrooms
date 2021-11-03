@@ -3667,6 +3667,13 @@
     display: none;
   }
 
+  .background-video-2 {
+    width: auto;
+    height: 300px;
+    max-width: 400px;
+    min-width: 250px;
+  }
+
   .button-4.w--current {
     padding: 11px 14px;
   }
