@@ -20,9 +20,7 @@
       </div>
     </div>
   </div>
-  <EarlyMintForm v-if="isPresalePaused === false"/>
-  <MintForm v-else-if="isPaused === false"/>
-  <ComingSoon v-else/>
+  <EarlyMintForm/>
   <div class="space-bottom-large-3 trailer wf-section"><img src="images/левоshrooms_back_night2.png" loading="lazy" sizes="100vw" srcset="images/левоshrooms_back_night2-p-500.png 500w, images/левоshrooms_back_night2.png 556w" alt="" class="image-18"><img src="images/правоshrooms_back_night1-1.png" loading="lazy" alt="" class="image-124">
     <div class="container fadeup w-container">
       <div class="video-wrapper">
@@ -158,8 +156,8 @@ export default {
   name: "Home",
   components: {
     NavBar,
-    ComingSoon,
-    MintForm,
+    //ComingSoon,
+    //MintForm,
     EarlyMintForm
   },
   methods: {
