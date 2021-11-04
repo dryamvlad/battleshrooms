@@ -3,7 +3,7 @@
     <div class="container-2 fadeup w-container">
       <div class="center-content-3">
         <h3 class="display-heading-8 space-bottom-extra-small">Mint your Shrooms</h3>
-        <div class="text-lead-2 space-bottom">Minted <span class="text-primary-4">{{ $store.state.contractData.totalSupply }}</span> Shrooms in <span class="text-primary-4">1st generation</span></div>
+        <div class="text-lead-2 space-bottom"  v-show="showLoading === false">Minted <span class="text-primary-4">{{ $store.state.contractData.totalSupply }}</span> Shrooms in <span class="text-primary-4">1st generation</span></div>
         <div class="panel-2">
           <div>
             <div id="mint-form" class="form-block-2 w-form" v-show="showLoading === false">
