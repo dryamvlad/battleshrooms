@@ -74,7 +74,7 @@ export default {
       return 'Mint!'
     },
     mintPrice(){
-      return this.$store.getters.ethPrice;
+      return this.$store.getters.ethPrice * this.num;
     },
     showLoading() {
       return typeof this.$store.state.contractData.totalSupply == 'undefined' && this.$store.state.wallet !== 0;
