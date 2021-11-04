@@ -6,7 +6,7 @@
           Battle Shrooms presale is up!
         </h3>
         <div class="panel space-bottom-extra-small" style="">
-          <div class="form-block w-form">
+          <div class="form-block w-form" v-show="showLoading === false">
             <form id="mint-form" name="email-form" data-name="Mint Form" class="center-content mint-form" v-if="isWhitelisted">
               <input type="button" @click="mintPresale()" v-model="buttonTitle" data-wait="Please wait..." class="button-4 w-button"/>
             </form>
@@ -14,8 +14,11 @@
             <div class="form-success w-form-done">
             </div>
           </div>
+          <div class="form-block w-form" v-show="showLoading">
+              <h3 class="text-primary">Loading...</h3>
+          </div>
         </div>
-        <div class="center-content">
+        <div class="center-content" v-show="showLoading === false">
           <div class="text-lead-2 space-bottom">
             <br/>
             Price: {{mintPrice}} MATIC<br/>
@@ -66,6 +69,9 @@ export default {
     mintPrice(){
       return this.$store.getters.ethPrice;
     },
+    showLoading() {
+      return typeof this.$store.state.contractData.totalSupply == 'undefined' && this.$store.state.wallet !== 0;
+    }
   },
 };
 </script>
@@ -76,5 +82,8 @@ export default {
   }
   h2 {
     margin-bottom: 0px;
+  }
+  h3.text-primary {
+    margin: 0;
   }
 </style>

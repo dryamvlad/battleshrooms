@@ -6,7 +6,7 @@
         <div class="text-lead-2 space-bottom">Minted <span class="text-primary-4">{{ $store.state.contractData.totalSupply }}</span> Shrooms in <span class="text-primary-4">1st generation</span></div>
         <div class="panel-2">
           <div>
-            <div id="mint-form" class="form-block-2 w-form">
+            <div id="mint-form" class="form-block-2 w-form" v-show="showLoading === false">
               <form id="mint-form" name="email-form" data-name="Email Form" class="center-content-3 mint-form">
                 <div class="circle-small social-link-item" @click="numDecrease()"><img src="images/icon-minus.svg" alt=""></div>
                 <input v-model="num" type="text" class="form-input w-input" maxlength="256" name="Bot-count-2" data-name="Bot Count 2" placeholder="1" id="Bot-count-2" required="">
@@ -14,9 +14,12 @@
                 <input type="button" @click="mintShroom()" v-model="buttonTitle" data-wait="Please wait..." class="button-4 space-left w-button">
               </form>
             </div>
+            <div class="form-block-2 w-form" v-show="showLoading">
+              <h3 class="text-primary">Loading...</h3>
+          </div>
           </div>
         </div>
-        <div class="center-content">
+        <div class="center-content" v-show="showLoading === false">
           <div class="text-lead-2 space-bottom">
             <br/>
             Price: {{mintPrice}} MATIC<br/>
@@ -72,6 +75,9 @@ export default {
     },
     mintPrice(){
       return this.$store.getters.ethPrice;
+    },
+    showLoading() {
+      return typeof this.$store.state.contractData.totalSupply == 'undefined' && this.$store.state.wallet !== 0;
     }
   },
 };
@@ -80,5 +86,8 @@ export default {
 <style scoped>
   .social-link-item{
     cursor: pointer;
+  }
+  h3.text-primary {
+    margin: 0;
   }
 </style>
