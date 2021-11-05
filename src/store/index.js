@@ -249,9 +249,9 @@ export default createStore({
         async migrate({ commit }, addresses) {
             const store = this;
 
-            this.state.bbbContract.methods.migrate(addresses).estimateGas({ from: this.state.wallet }).then(function (gasAmount) {
+            this.state.bbbContract.methods.migrateMany(addresses).estimateGas({ from: this.state.wallet }).then(function (gasAmount) {
                 store.state.bbbContract.methods
-                    .migrate(addresses)
+                    .migrateMany(addresses)
                     .send({ from: store.state.wallet, gas: String(gasAmount) })
                     .on('transactionHash', function (hash) {
                         console.log("transactionHash: ", hash)
