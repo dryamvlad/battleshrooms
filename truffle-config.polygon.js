@@ -19,7 +19,7 @@ module.exports = {
       chainId: 137,
       skipDryRun: false,
       gas: 20000000,
-      gasPrice: 10000000000,
+      gasPrice: 20000000000,
     },
     polygon_infura_testnet: {
       provider: function() {

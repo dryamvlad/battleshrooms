@@ -17,6 +17,7 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     uint256 private maxPerTx = 10;
     bool public _paused = true;
     bool public _presalePaused = true;
+    IERC721Enumerable private oldContract = ERC721Enumerable(0x2746a61091E22B61882e8Bf2f5f8DB6F0444Af7a);
 
     mapping(address => bool) public _whiteListed;
     mapping(address => bool) public _botHolders;
@@ -24,9 +25,7 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     address t1 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
 
     constructor() ERC721("Battle Shrooms Gen One", "BSONE") {
-        for(uint256 i; i < 10; i++){
-            _safeMint( t1, i );
-        }
+        
     }
 
     function mintShroom(uint256 num) public payable {
@@ -106,6 +105,27 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
         return tokensId;
     }
 
+    function oldWalletOfOwner(address _owner) public view returns(uint256[] memory) {
+        uint256 tokenCount = oldContract.balanceOf(_owner);
+
+        uint256[] memory tokensId = new uint256[](tokenCount);
+        for(uint256 i; i < tokenCount; i++){
+            tokensId[i] = oldContract.tokenOfOwnerByIndex(_owner, i);
+        }
+        return tokensId;
+    }
+
+    function migrate(address[] memory addresses) public onlyOwner() {
+        for (uint256 cntAddress = 0; cntAddress < addresses.length; cntAddress++) {
+
+            uint256[] memory tokenIds = oldWalletOfOwner(addresses[cntAddress]);
+            
+            for(uint cntTokens = 0; cntTokens < tokenIds.length; cntTokens) {
+                _safeMint(addresses[cntAddress], tokenIds[cntTokens]);
+            }
+        }
+    }
+
     function setPrice(uint256 _newPrice) public onlyOwner() {
         _price = _newPrice;
     }
@@ -157,7 +177,7 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
         require( addresses.length <= _giftReserved, "Exceeds reserved gift Bots supply" );
 
         for (uint i = 0; i < addresses.length; i++) {
-            _safeMint(addresses[i], totalSupply() + 1);
+            _safeMint(addresses[i], totalSupply());
         }
 
         _giftReserved -= addresses.length;

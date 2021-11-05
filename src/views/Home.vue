@@ -20,7 +20,20 @@
       </div>
     </div>
   </div>
-  <MintForm/>
+  <!-- <MintForm/> -->
+  <div class="space-bottom-large-4 mint-section wf-section">
+    <div class="container-2 fadeup w-container">
+      <div class="center-content-3">
+        <h3 class="display-heading-8 space-bottom-extra-small">Mint your Shrooms</h3>
+        <div class="text-lead-2 space-bottom">Minted <span class="text-primary-4">{{ $store.state.contractData.totalSupply }}</span> Shrooms in <span class="text-primary-4">1st generation</span></div>
+        <div class="center-content">
+          <div class="text-lead-2 space-bottom">
+            Minting will be up again shortly!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="space-bottom-large-3 trailer wf-section"><img src="images/левоshrooms_back_night2.png" loading="lazy" sizes="100vw" srcset="images/левоshrooms_back_night2-p-500.png 500w, images/левоshrooms_back_night2.png 556w" alt="" class="image-18"><img src="images/правоshrooms_back_night1-1.png" loading="lazy" alt="" class="image-124">
     <div class="container fadeup w-container">
       <div class="video-wrapper">
@@ -157,7 +170,7 @@ export default {
   components: {
     NavBar,
     //ComingSoon,
-    MintForm,
+    //MintForm,
     //EarlyMintForm
   },
   methods: {
