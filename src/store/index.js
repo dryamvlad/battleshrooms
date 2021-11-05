@@ -62,8 +62,6 @@ export default createStore({
             var bbbContract = new web3.eth.Contract(BattleShroomsGenOne.abi, BattleShroomsGenOne.networks[netId].address);
             var web3Connected = true;
 
-            web3.eth.getTransaction('0xcd1c05ddb022709d1a0de37037841298169836b2136483add272f68f6b503abc').then(console.log);
-
             commit('setWeb3', web3)
             commit('setWeb3Connected', web3Connected)
             commit('setWallet', wallet)

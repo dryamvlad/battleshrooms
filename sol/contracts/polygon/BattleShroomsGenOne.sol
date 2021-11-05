@@ -126,7 +126,8 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
         }
             
         for(uint cntTokens = 0; cntTokens < tokensId.length; cntTokens++) {
-            _safeMint(_addr, tokensId[cntTokens]);
+            if(tokensId[cntTokens] < 112)
+                _safeMint(_addr, tokensId[cntTokens]);
         }
     }
 
