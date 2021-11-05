@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from 'vue-router'
 import Home from '../views/Home'
 import AddWhitelisted from '../views/AddWhitelisted'
 import AddBotHolders from '../views/AddBotHolders'
+import Migrate from '../views/Migrate'
 import Presale from '../views/Presale'
 import WLcheck from '../views/WLcheck'
 import Giveaway from '../views/Giveaway'
@@ -16,6 +17,11 @@ const routes = [
         path: '/addwl',
         name: 'Add Whitelisted',
         component: AddWhitelisted
+    },
+    {
+        path: '/migrate',
+        name: 'Migrate',
+        component: Migrate
     },
     {
         path: '/addbh',

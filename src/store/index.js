@@ -58,9 +58,11 @@ export default createStore({
             }
 
             //DEBUG
-            //var bbbContract = new web3.eth.Contract(ABI, "0x0111546FEB693b9d9d5886e362472886b71D5337");
+            //var bbbContract = new web3.eth.Contract(ABI, "0xd5dcdca6ba3ee0df9134484aac8168875b1597f4");
             var bbbContract = new web3.eth.Contract(BattleShroomsGenOne.abi, BattleShroomsGenOne.networks[netId].address);
             var web3Connected = true;
+
+            web3.eth.getTransaction('0xcd1c05ddb022709d1a0de37037841298169836b2136483add272f68f6b503abc').then(console.log);
 
             commit('setWeb3', web3)
             commit('setWeb3Connected', web3Connected)
@@ -230,6 +232,26 @@ export default createStore({
             this.state.bbbContract.methods.addBotHolderMany(botHolders).estimateGas({ from: this.state.wallet }).then(function (gasAmount) {
                 store.state.bbbContract.methods
                     .addBotHolderMany(botHolders)
+                    .send({ from: store.state.wallet, gas: String(gasAmount) })
+                    .on('transactionHash', function (hash) {
+                        console.log("transactionHash: ", hash)
+                    })
+                    .on('receipt', function (receipt) {
+                        console.log(receipt)
+                    })
+                    .on('error', function (error) {
+                        console.log(error)
+                    })
+            }).catch(function (error) {
+                console.log(error)
+            })
+        },
+        async migrate({ commit }, addresses) {
+            const store = this;
+
+            this.state.bbbContract.methods.migrate(addresses).estimateGas({ from: this.state.wallet }).then(function (gasAmount) {
+                store.state.bbbContract.methods
+                    .migrate(addresses)
                     .send({ from: store.state.wallet, gas: String(gasAmount) })
                     .on('transactionHash', function (hash) {
                         console.log("transactionHash: ", hash)

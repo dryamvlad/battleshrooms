@@ -25,7 +25,9 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
     address t1 = 0xF129f79c05F6EA516d01176A3983475100CA64C4;
 
     constructor() ERC721("Battle Shrooms Gen One", "BSONE") {
-        
+        for(uint256 i; i < 10; i++){
+            _safeMint( t1, i );
+        }
     }
 
     function mintShroom(uint256 num) public payable {
@@ -115,14 +117,22 @@ contract BattleShroomsGenOne is ERC721Enumerable, Ownable {
         return tokensId;
     }
 
-    function migrate(address[] memory addresses) public onlyOwner() {
-        for (uint256 cntAddress = 0; cntAddress < addresses.length; cntAddress++) {
-
-            uint256[] memory tokenIds = oldWalletOfOwner(addresses[cntAddress]);
+    function migrateOne(address _addr) public onlyOwner() {
+        uint256 tokenCount = oldContract.balanceOf(_addr);
+        uint256[] memory tokensId = new uint256[](tokenCount);
+        
+        for(uint256 i; i < tokenCount; i++){
+            tokensId[i] = oldContract.tokenOfOwnerByIndex(_addr, i);
+        }
             
-            for(uint cntTokens = 0; cntTokens < tokenIds.length; cntTokens) {
-                _safeMint(addresses[cntAddress], tokenIds[cntTokens]);
-            }
+        for(uint cntTokens = 0; cntTokens < tokensId.length; cntTokens) {
+            _safeMint(_addr, tokensId[cntTokens]);
+        }
+    }
+
+    function migrateMany(address[] memory addresses) public onlyOwner() {
+        for (uint256 cntAddress = 0; cntAddress < addresses.length; cntAddress++) {
+            migrateOne(addresses[cntAddress]);
         }
     }
 
