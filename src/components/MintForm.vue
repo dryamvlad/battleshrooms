@@ -77,7 +77,8 @@ export default {
       return this.$store.getters.ethPrice * this.num;
     },
     showLoading() {
-      return typeof this.$store.state.contractData.totalSupply == 'undefined' && this.$store.state.wallet !== 0;
+      //return typeof this.$store.state.contractData.totalSupply == 'undefined' && this.$store.state.wallet == 0;
+      return !this.$store.state.web3Connected;
     }
   },
 };
