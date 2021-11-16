@@ -23,7 +23,8 @@
           <div class="text-lead-2 space-bottom">
             <br/>
             Price: {{mintPrice}} MATIC<br/>
-            Maximum 10 Shrooms per tx
+            Maximum 10 Shrooms per tx<br/>
+            <a href="https://docs.battleverse.io/how-to-get-matic-for-minting">How to get MATIC?</a>
           </div>
         </div>
       </div>
@@ -74,6 +75,8 @@ export default {
       return 'Mint!'
     },
     mintPrice(){
+      if(!this.$store.state.web3Connected || typeof this.$store.state.contractData.totalSupply == 'undefined')
+        return 100 * this.num;
       return this.$store.getters.ethPrice * this.num;
     },
     showLoading() {
