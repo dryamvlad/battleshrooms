@@ -16,7 +16,13 @@
             </div>
             <div class="form-block-2 w-form" v-show="showLoading">
               <h3 class="text-primary">Loading...</h3>
+            </div>
           </div>
+        </div>
+        <div class="center-content-3" v-show="showLoading === false">
+          <div class="text-lead-2 space-bottom-small">
+            <br/>
+            <span class="text-primary-4"><a href="https://checkout.webill.io/nft/ace4c308-e20d-4a70-82eb-91db2fea7a89">Mint via WeBill</a></span>
           </div>
         </div>
         <div class="center-content" v-show="showLoading === false">
