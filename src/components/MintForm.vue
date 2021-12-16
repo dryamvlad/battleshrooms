@@ -22,8 +22,9 @@
         <div class="center-content-3">
           <div class="text-lead-2 space-bottom-small">
             <br/>
-            <span class="text-primary-4"><a href="https://checkout.webill.io/nft/ace4c308-e20d-4a70-82eb-91db2fea7a89">Mint via WeBill</a></span>
+            <span class="text-primary-4"><a href="https://checkout.webill.io/nft/ace4c308-e20d-4a70-82eb-91db2fea7a89">Mint for ETH or BNB</a></span>
           </div>
+          (via WeBill)
         </div>
         <div class="center-content" v-show="showLoading === false">
           <div class="text-lead-2 space-bottom">
